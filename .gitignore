@@ -33,6 +33,8 @@ yarn-error.log*
 Thumbs.db
 ehthumbs.db
 Icon?
+!assets/icons/
+!assets/icons/**
 
 # IDEs and Code Editors
 .vscode/
