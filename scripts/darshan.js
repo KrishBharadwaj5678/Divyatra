@@ -16,7 +16,7 @@ const gods = [
     descriptionHi:
       "गणेश जी को विघ्नों को दूर करने वाले तथा शुभारंभ, ज्ञान और समृद्धि के देवता के रूप में पूजा जाता है।",
 
-    narrationFolderName: "ganesha",
+    narrationFolderName: "Ganesha",
 
     model: "assets/models/ganesha.glb",
 
@@ -68,7 +68,7 @@ const gods = [
     descriptionHi:
       "ब्रह्मा को ब्रह्मांड के सृष्टिकर्ता के रूप में पूजा जाता है, जो ज्ञान, सृष्टि और ब्रह्मांडीय व्यवस्था के प्रारंभ का प्रतीक हैं।",
 
-    narrationFolderName: "brahma",
+    narrationFolderName: "Brahma",
 
     model: "assets/models/brahma.glb",
 
@@ -119,7 +119,7 @@ const gods = [
     descriptionHi:
       "सरस्वती विद्या, ज्ञान, संगीत, रचनात्मकता और दिव्य ज्ञान के प्रवाह का प्रतीक हैं।",
 
-    narrationFolderName: "saraswati",
+    narrationFolderName: "Saraswati",
 
     model: "assets/models/saraswati.glb",
 
@@ -171,7 +171,7 @@ const gods = [
     descriptionHi:
       "लक्ष्मी समृद्धि, सौभाग्य, शुभता, दया और कृपा का प्रतीक हैं, जो जीवन में संतुलन और वैभव लाती हैं।",
 
-    narrationFolderName: "lakshmi",
+    narrationFolderName: "Lakshmi",
 
     model: "assets/models/lakshmi.glb",
 
@@ -223,7 +223,7 @@ const gods = [
     descriptionHi:
       "काली दिव्य शक्ति, साहस, असुरों के विनाश और सत्य तथा न्याय की कठोर रक्षा का प्रतीक हैं।",
 
-    narrationFolderName: "kali",
+    narrationFolderName: "Kali",
 
     model: "assets/models/kali.glb",
 
@@ -275,7 +275,7 @@ const gods = [
     descriptionHi:
       "शनि देव अनुशासन, न्याय, कर्म और उन शिक्षाओं का प्रतीक हैं, जो आध्यात्मिक परिपक्वता और संतुलन की ओर ले जाती हैं।",
 
-    narrationFolderName: "shanidev",
+    narrationFolderName: "ShaniDev",
 
     model: "assets/models/shanidev.glb",
 
@@ -327,7 +327,7 @@ const gods = [
     descriptionHi:
       "विष्णु भगवान संरक्षण, सुरक्षा और ब्रह्मांडीय संतुलन की पुनर्स्थापना से जुड़े हैं।",
 
-    narrationFolderName: "vishnu",
+    narrationFolderName: "Vishnu",
 
     model: "assets/models/vishnu.glb",
 
@@ -379,7 +379,7 @@ const gods = [
     descriptionHi:
       "शिव परिवर्तन, ध्यान तथा सृष्टि और संहार के शाश्वत चक्र का प्रतिनिधित्व करते हैं।",
 
-    narrationFolderName: "shiva",
+    narrationFolderName: "Shiva",
 
     model: "assets/models/shiva.glb",
 
@@ -431,7 +431,7 @@ const gods = [
     descriptionHi:
       "राधा और कृष्ण दिव्य प्रेम, भक्ति और आध्यात्मिक एकता के शाश्वत बंधन का प्रतीक हैं। उनका संबंध आत्मा और परमात्मा के बीच पवित्र प्रेम और भक्ति को दर्शाता है।",
 
-    narrationFolderName: "radhakrishna",
+    narrationFolderName: "RadhaKrishna",
 
     model: "assets/models/radhakrishna.glb",
 
@@ -483,7 +483,7 @@ const gods = [
     descriptionHi:
       "हनुमान जी शक्ति, साहस, विनम्रता और भगवान राम के प्रति अटूट भक्ति के प्रतीक हैं।",
 
-    narrationFolderName: "hanuman",
+    narrationFolderName: "Hanuman",
 
     model: "assets/models/hanuman.glb",
 
@@ -535,7 +535,7 @@ const gods = [
     descriptionHi:
       "सीता और राम भक्ति, नैतिकता, दया और जीवन में धर्म के पवित्र आदर्श का प्रतीक हैं।",
 
-    narrationFolderName: "sitaram",
+    narrationFolderName: "SitaRam",
 
     model: "assets/models/sitaram.glb",
 
@@ -587,7 +587,7 @@ const gods = [
     descriptionHi:
       "दुर्गा दिव्य शक्ति, साहस, रक्षा और अशुभ पर शुभ की विजय का प्रतीक हैं।",
 
-    narrationFolderName: "durga",
+    narrationFolderName: "Durga",
 
     model: "assets/models/durga.glb",
 
