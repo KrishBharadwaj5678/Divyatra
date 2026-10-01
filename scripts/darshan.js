@@ -2267,7 +2267,9 @@ function startFlowerOffering() {
 
   const frontZ = modelCenter.z + 0.8;
 
-  const FLOWER_COUNT = 100;
+  const isMobileOrTablet =
+    window.matchMedia("(pointer: coarse)").matches || window.innerWidth <= 900;
+  const flowerCount = isMobileOrTablet ? 20 : 50;
 
   const startTime = performance.now();
 
@@ -2275,7 +2277,7 @@ function startFlowerOffering() {
 
   flowerOfferingButton.disabled = true;
 
-  for (let i = 0; i < FLOWER_COUNT; i++) {
+  for (let i = 0; i < flowerCount; i++) {
     const flower = createConfettiFlower();
 
     flower.position.set(
@@ -2653,7 +2655,7 @@ function createVirtualDiya() {
   // 10. FLAME LIGHT
   // =========================================================
 
-  diyaLight = new THREE.PointLight(0xffa52b, 2.8, 4.5);
+  diyaLight = new THREE.PointLight(0xffa52b, 2.4, 4.5);
 
   diyaLight.position.set(0.02, 0.48, 0);
 
@@ -2707,6 +2709,8 @@ function performVirtualDiya() {
 
   const startAngle = -Math.PI / 2;
 
+  const diyaScale = window.innerWidth <= 900 ? 0.18 : 0.25;
+
   virtualDiya.visible = true;
 
   virtualDiya.rotation.set(0, 0, 0);
@@ -2722,7 +2726,7 @@ function performVirtualDiya() {
   );
 
   if (diyaLight) {
-    diyaLight.intensity = 2.5;
+    diyaLight.intensity = 2.2;
   }
 
   const duration = 2600;
@@ -2755,11 +2759,11 @@ function performVirtualDiya() {
     if (progress < 0.12) {
       const scaleProgress = progress / 0.12;
 
-      const scale = 0.01 + scaleProgress * 0.35;
+      const scale = 0.01 + scaleProgress * (diyaScale - 0.01);
 
       virtualDiya.scale.set(scale, scale, scale);
     } else {
-      virtualDiya.scale.set(0.27, 0.27, 0.27);
+      virtualDiya.scale.set(diyaScale, diyaScale, diyaScale);
     }
 
     // =========================================================
@@ -2800,7 +2804,7 @@ function performVirtualDiya() {
         Math.sin(currentTime * 0.031) * 0.12 +
         Math.sin(currentTime * 0.047) * 0.06;
 
-      diyaLight.intensity = 2.7 + lightFlicker;
+      diyaLight.intensity = 1.2 + lightFlicker;
     }
 
     if (progress < 1) {
@@ -2840,7 +2844,7 @@ function fadeOutDiya() {
     virtualDiya.scale.set(scale, scale, scale);
 
     if (diyaLight) {
-      diyaLight.intensity = 2.5 * (1 - progress);
+      diyaLight.intensity = 2.2 * (1 - progress);
     }
 
     if (progress < 1) {
@@ -2851,7 +2855,7 @@ function fadeOutDiya() {
       virtualDiyaButton.classList.remove("active");
 
       if (diyaLight) {
-        diyaLight.intensity = 2.5;
+        diyaLight.intensity = 2.2;
       }
     }
   }
