@@ -1,0 +1,326 @@
+@media (max-width: 900px) {
+        header,
+        .hero {
+          width: calc(100% - 40px);
+        }
+
+        .hero {
+          padding-top: 105px;
+        }
+
+        .cursor-glow {
+          width: 350px;
+          height: 350px;
+        }
+
+        .glow-one {
+          width: 420px;
+          height: 420px;
+
+          left: -190px;
+
+          filter: blur(65px);
+        }
+
+        .glow-two {
+          width: 500px;
+          height: 500px;
+
+          right: -260px;
+
+          filter: blur(65px);
+        }
+
+        .glow-three {
+          width: 430px;
+          height: 430px;
+
+          left: 15%;
+
+          filter: blur(60px);
+        }
+
+        .glow-four {
+          width: 280px;
+          height: 280px;
+
+          right: 5%;
+
+          filter: blur(55px);
+        }
+
+        .headline {
+          font-size: clamp(56px, 10vw, 95px);
+        }
+
+        .headline-row {
+          gap: 16px;
+        }
+
+        .hero-image {
+          width: clamp(135px, 20vw, 190px);
+          height: clamp(78px, 11vw, 110px);
+        }
+
+        .actions {
+          margin-top: 36px;
+        }
+
+        .devotional-note {
+          margin-top: 14px;
+          font-size: 17px;
+        }
+
+        .socials {
+          gap: 8px;
+        }
+
+        .social-link {
+          width: 38px;
+          height: 38px;
+        }
+
+        .social-link svg {
+          width: 18px;
+          height: 18px;
+        }
+      }
+
+@media (min-width: 601px) and (max-width: 900px) {
+        .hero {
+          justify-content: center;
+          padding-top: clamp(48px, 7vh, 80px);
+          padding-bottom: 32px;
+        }
+
+        .devotional-closer {
+          margin: clamp(48px, 8vh, 88px) 0 0;
+        }
+      }
+
+@media (max-width: 600px) {
+        header {
+          width: calc(100% - 28px);
+
+          height: 72px;
+        }
+
+        .logo img {
+          width: 29px;
+          height: 29px;
+        }
+
+        .socials {
+          gap: 6px;
+        }
+
+        .social-link {
+          width: 36px;
+          height: 36px;
+        }
+
+        .social-link svg {
+          width: 16px;
+          height: 16px;
+        }
+
+        .hero {
+          width: calc(100% - 28px);
+
+          min-height: calc(100vh - 72px);
+
+          padding-top: 92px;
+
+          padding-bottom: 42px;
+        }
+
+        /* Mobile ambient glows */
+
+        .glow-one {
+          width: 330px;
+          height: 330px;
+
+          left: -190px;
+          top: 8vh;
+
+          filter: blur(50px);
+        }
+
+        .glow-two {
+          width: 390px;
+          height: 390px;
+
+          right: -240px;
+          top: 30vh;
+
+          filter: blur(55px);
+        }
+
+        .glow-three {
+          width: 330px;
+          height: 330px;
+
+          left: 5%;
+          bottom: -190px;
+
+          filter: blur(50px);
+        }
+
+        .glow-four {
+          width: 210px;
+          height: 210px;
+
+          right: -20px;
+          top: 4vh;
+
+          filter: blur(45px);
+        }
+
+        .headline {
+          font-size: clamp(48px, 15.8vw, 76px);
+
+          line-height: 0.92;
+
+          letter-spacing: -0.065em;
+        }
+
+        .headline-row {
+          gap: 8px;
+        }
+
+        .headline-row:first-child {
+          flex-direction: column;
+          gap: 12px;
+        }
+
+        .headline-row.second {
+          margin-top: 7px;
+
+          gap: 10px;
+        }
+
+        .hero-image {
+          width: clamp(128px, 40vw, 170px);
+          height: clamp(76px, 23vw, 104px);
+        }
+
+        .actions {
+          margin-top: 32px;
+        }
+
+        .animated-button {
+          width: 145px;
+          height: 48px;
+
+          padding: 0 31px;
+
+          font-size: 11px;
+
+          letter-spacing: 0.11em;
+        }
+
+        .animated-button svg {
+          width: 20px;
+          height: 20px;
+        }
+
+        .animated-button .arr-1 {
+          right: 13px;
+        }
+
+        .animated-button:hover .arr-2 {
+          left: 13px;
+        }
+
+        .corner-one {
+          top: 91px;
+          left: 9px;
+        }
+
+        .corner-two {
+          top: 91px;
+          right: 9px;
+        }
+      }
+
+@media (max-width: 390px) {
+        .hero {
+          padding-top: 82px;
+        }
+
+        .glow-one {
+          width: 280px;
+          height: 280px;
+
+          left: -165px;
+        }
+
+        .glow-two {
+          width: 320px;
+          height: 320px;
+
+          right: -200px;
+        }
+
+        .glow-three {
+          width: 280px;
+          height: 280px;
+
+          left: 0;
+        }
+
+        .glow-four {
+          width: 180px;
+          height: 180px;
+
+          right: -20px;
+        }
+
+        .headline {
+          font-size: clamp(36px, 13.5vw, 46px);
+        }
+
+        .hero-image {
+          width: clamp(128px, 40vw, 150px);
+          height: clamp(76px, 23vw, 94px);
+        }
+
+        .headline-row {
+          gap: 7px;
+        }
+
+        .actions {
+          margin-top: 28px;
+        }
+
+        .animated-button {
+          width: 138px;
+          height: 46px;
+
+          font-size: 10px;
+        }
+      }
+
+@media (hover: none), (pointer: coarse) {
+        .cursor-glow {
+          display: none;
+        }
+      }
+
+@media (prefers-reduced-motion: reduce) {
+        *,
+        *::before,
+        *::after {
+          animation-duration: 0.01ms !important;
+
+          animation-iteration-count: 1 !important;
+
+          transition-duration: 0.01ms !important;
+
+          scroll-behavior: auto !important;
+        }
+
+        .cursor-glow {
+          display: none;
+        }
+      }

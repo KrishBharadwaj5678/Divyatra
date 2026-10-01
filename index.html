@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Divyatra | Divine Darshan</title>
+
+    <meta
+      name="description"
+      content="Explore immersive 3D darshan of Hindu deities with Divyatra, a digital experience rooted in devotion and spirituality."
+    />
+    <meta name="robots" content="index, follow, max-image-preview:large" />
+    <link rel="canonical" href="https://divyatra.netlify.app/" />
+
+    <!-- Favicon -->
+    <link
+      rel="icon"
+      type="image/png"
+      href="/assets/favicon/favicon-96x96.png"
+      sizes="96x96"
+    />
+    <link rel="icon" type="image/svg+xml" href="/assets/favicon/favicon.svg" />
+    <link rel="shortcut icon" href="/assets/favicon/favicon.ico" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/assets/favicon/apple-touch-icon.png"
+    />
+    <meta name="apple-mobile-web-app-title" content="Divyatra" />
+    <link rel="manifest" href="/manifest.json" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Libre+Baskerville:wght@400;700&family=Hind+Devanagari:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+
+    <link rel="stylesheet" href="./styles/index.css" />
+    <link rel="stylesheet" href="./styles/mediaquery/index-breakpoints.css" />
+  </head>
+
+  <body>
+    <main class="page">
+      <!-- =================================
+           CURSOR FOLLOWING LIGHT
+      ================================== -->
+
+      <span class="cursor-glow" aria-hidden="true"></span>
+
+      <!-- =================================
+           AMBIENT GLOWS
+      ================================== -->
+
+      <span class="ambient-glow glow-one" aria-hidden="true"></span>
+
+      <span class="ambient-glow glow-two" aria-hidden="true"></span>
+
+      <span class="ambient-glow glow-three" aria-hidden="true"></span>
+
+      <span class="ambient-glow glow-four" aria-hidden="true"></span>
+
+      <!-- =================================
+           DECORATIVE CORNERS
+      ================================== -->
+
+      <span class="corner-mark corner-one"></span>
+      <span class="corner-mark corner-two"></span>
+
+      <!-- =================================
+           NAVIGATION
+      ================================== -->
+
+      <header>
+        <!-- Logo -->
+
+        <a href="./index.html" class="logo" aria-label="Divine home">
+          <img src="./assets/icons/logo.svg" alt="Divine" />
+        </a>
+
+        <!-- Social media -->
+
+        <nav class="socials" aria-label="Social media">
+          <!-- GitHub -->
+
+          <a
+            href="https://github.com/"
+            class="social-link"
+            aria-label="GitHub"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path
+                d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.166 6.839 9.489.5.092.682-.217.682-.483 0-.237-.009-.866-.013-1.7-2.782.604-3.369-1.34-3.369-1.34-.455-1.157-1.11-1.466-1.11-1.466-.908-.621.069-.608.069-.608 1.004.071 1.532 1.031 1.532 1.031.892 1.529 2.341 1.087 2.91.831.091-.647.35-1.087.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.684-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.564 9.564 0 0 1 12 6.844a9.56 9.56 0 0 1 2.504.337c1.909-1.294 2.748-1.025 2.748-1.025.546 1.377.202 2.394.1 2.647.64.7 1.028 1.593 1.028 2.684 0 3.842-2.339 4.687-4.566 4.935.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.748 0 .268.18.58.688.481A10.001 10.001 0 0 0 22 12c0-5.523-4.477-10-10-10Z"
+              />
+            </svg>
+          </a>
+
+          <!-- Instagram -->
+
+          <a
+            href="https://www.instagram.com/"
+            class="social-link"
+            aria-label="Instagram"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path
+                d="M7.8 2h8.4A5.8 5.8 0 0 1 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8A5.8 5.8 0 0 1 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2Zm-.2 2A3.6 3.6 0 0 0 4 7.6v8.8A3.6 3.6 0 0 0 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6A3.6 3.6 0 0 0 16.4 4H7.6ZM17.25 5.5a1.25 1.25 0 1 1 0 2.5 1.25 1.25 0 0 1 0-2.5ZM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10Zm0 2a3 3 0 1 0 0 6 3 3 0 0 0-3-3Z"
+              />
+            </svg>
+          </a>
+
+          <!-- YouTube -->
+
+          <a
+            href="https://www.youtube.com/"
+            class="social-link"
+            aria-label="YouTube"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path
+                d="M23.5 6.2a3 3 0 0 0-2.11-2.12C19.52 3.5 12 3.5 12 3.5s-7.52 0-9.39.58A3 3 0 0 0 .5 6.2 31.2 31.2 0 0 0 0 12a31.2 31.2 0 0 0 .5 5.8 3 3 0 0 0 2.11 2.12c1.87.58 9.39.58 9.39.58s7.52 0 9.39-.58a3 3 0 0 0 2.11-2.12A31.2 31.2 0 0 0 24 12a31.2 31.2 0 0 0-.5-5.8ZM9.75 15.5v-7L15.5 12l-5.75 3.5Z"
+              />
+            </svg>
+          </a>
+        </nav>
+      </header>
+
+      <!-- =================================
+           HERO
+      ================================== -->
+
+      <section class="hero" id="experience">
+        <h1 class="headline">
+          <span class="headline-row">
+            <span class="headline-word"> Come Closer </span>
+
+            <span class="hero-image">
+              <img src="./assets/images/index.webp" alt="Radha and Krishna" />
+            </span>
+          </span>
+
+          <span class="headline-row second">
+            <span class="headline-word"> To </span>
+
+            <span class="headline-word"> The Divine </span>
+          </span>
+        </h1>
+
+        <!-- =================================
+             EXPERIENCE BUTTON
+        ================================== -->
+
+        <div class="actions">
+          <a
+            href="./darshan.html"
+            class="animated-button"
+            aria-label="Enter the Divine experience"
+          >
+            <!-- Left arrow -->
+
+            <svg
+              viewBox="0 0 24 24"
+              class="arr-2"
+              xmlns="http://www.w3.org/2000/svg"
+              aria-hidden="true"
+            >
+              <path
+                d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
+              />
+            </svg>
+
+            <span class="text"> Experience </span>
+
+            <span class="circle" aria-hidden="true"></span>
+
+            <!-- Right arrow -->
+
+            <svg
+              viewBox="0 0 24 24"
+              class="arr-1"
+              xmlns="http://www.w3.org/2000/svg"
+              aria-hidden="true"
+            >
+              <path
+                d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
+              />
+            </svg>
+          </a>
+        </div>
+
+        <div class="devotional-closer">
+          <div class="temple-divider" aria-hidden="true"><span></span></div>
+          <p class="devotional-note">
+            Find stillness in the presence of the divine.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <script src="./scripts/index.js"></script>
+  </body>
+</html>

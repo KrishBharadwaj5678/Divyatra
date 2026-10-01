@@ -1,0 +1,25 @@
+{
+  "id": "/",
+  "name": "Divyatra",
+  "short_name": "Divyatra",
+  "description": "Explore immersive 3D darshan of Hindu deities with Divyatra, a digital experience rooted in devotion and spirituality.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#f5f0e6",
+  "theme_color": "#f5f0e6",
+  "icons": [
+    {
+      "src": "/assets/favicon/web-app-manifest-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/assets/favicon/web-app-manifest-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}

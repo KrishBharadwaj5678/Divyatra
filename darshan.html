@@ -1,0 +1,364 @@
+﻿<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Libre+Baskerville:wght@400;700&family=Hind+Devanagari:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Divyatra | Divine Darshan</title>
+    <meta
+      name="description"
+      content="Explore immersive 3D darshan of Hindu deities with Divyatra, a digital experience rooted in devotion and spirituality."
+    />
+    <meta name="robots" content="index, follow, max-image-preview:large" />
+    <link rel="canonical" href="https://divyatra.netlify.app/darshan.html" />
+
+    <!-- Favicon -->
+    <link
+      rel="icon"
+      type="image/png"
+      href="/assets/favicon/favicon-96x96.png"
+      sizes="96x96"
+    />
+    <link rel="icon" type="image/svg+xml" href="/assets/favicon/favicon.svg" />
+    <link rel="shortcut icon" href="/assets/favicon/favicon.ico" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/assets/favicon/apple-touch-icon.png"
+    />
+    <meta name="apple-mobile-web-app-title" content="Divyatra" />
+    <link rel="manifest" href="/manifest.json" />
+
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Three.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+
+    <!-- GLTF Loader -->
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/loaders/GLTFLoader.js"></script>
+
+    <!-- Draco Loader -->
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/loaders/DRACOLoader.js"></script>
+
+    <!-- Orbit Controls -->
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.js"></script>
+
+    <link rel="stylesheet" href="./styles/darshan.css" />
+    <link rel="stylesheet" href="./styles/mediaquery/darshan-breakpoints.css" />
+  </head>
+
+  <body>
+    <!-- ========================================================
+       BACKGROUND
+    ========================================================= -->
+
+    <div class="background"></div>
+
+    <!-- ========================================================
+   THREE.JS
+========================================================= -->
+
+    <div id="scene"></div>
+
+    <!-- ========================================================
+   BRAND
+========================================================= -->
+
+    <div class="brand">
+      <img src="./assets/icons/logo.svg" alt="Logo" />
+    </div>
+
+    <!-- ========================================================
+   TOP CONTROLS
+========================================================= -->
+
+    <div class="top-controls">
+      <!-- LANGUAGE -->
+
+      <button
+        id="languageButton"
+        class="language-button"
+        aria-label="Switch language"
+        title="Switch Language"
+      >
+        <img
+          id="languageIcon"
+          src="./assets/icons/en.webp"
+          alt="English language selected"
+          class="top-icon"
+        />
+      </button>
+
+      <button
+        id="storySpeechButton"
+        class="virtual-diya-button story-speech-button"
+        aria-label="Story"
+        title="Story"
+      >
+        <img src="./assets/icons/speak.webp" alt="Story" class="top-icon" />
+        <span id="storySpeechText">Story</span>
+      </button>
+
+      <!-- SETTINGS -->
+
+      <button
+        id="settingsButton"
+        class="settings-button"
+        aria-label="Open settings"
+        title="Settings"
+      >
+        <img
+          src="./assets/icons/settings.webp"
+          alt="Settings"
+          class="top-icon"
+        />
+      </button>
+
+      <!-- MUSIC -->
+
+      <button
+        id="musicButton"
+        class="music-button"
+        aria-label="Toggle Chanting"
+        title="Chanting"
+      >
+        <img
+          src="./assets/icons/play.webp"
+          alt="Play chanting"
+          class="top-icon"
+        />
+      </button>
+    </div>
+
+    <!-- ========================================================
+   SETTINGS POPUP
+========================================================= -->
+
+    <div id="settingsPopup" class="settings-popup">
+      <!-- HEADER -->
+
+      <div class="settings-header">
+        <div class="settings-heading">
+          <span class="settings-heading-icon">⚙</span>
+
+          <span id="settingsTitle">Settings</span>
+        </div>
+
+        <button
+          id="settingsClose"
+          class="settings-close"
+          aria-label="Close settings"
+        >
+          ✕
+        </button>
+      </div>
+
+      <!-- AUTO ROTATE -->
+
+      <div class="setting-row">
+        <div class="setting-info">
+          <div id="autoRotateName" class="setting-name">Auto Rotate</div>
+
+          <div id="autoRotateDescription" class="setting-description">
+            Rotate the divine model automatically
+          </div>
+        </div>
+
+        <label class="toggle">
+          <input type="checkbox" id="autoRotateToggle" />
+
+          <span class="toggle-slider"></span>
+        </label>
+      </div>
+
+      <!-- FULLSCREEN -->
+
+      <div class="setting-row">
+        <div class="setting-info">
+          <div id="fullscreenName" class="setting-name">Fullscreen</div>
+
+          <div id="fullscreenDescription" class="setting-description">
+            View the divine experience in fullscreen
+          </div>
+        </div>
+
+        <label class="toggle">
+          <input type="checkbox" id="fullscreenToggle" />
+
+          <span class="toggle-slider"></span>
+        </label>
+      </div>
+
+      <!-- AR PLACEMENT -->
+
+      <div id="arSettingRow" class="setting-row" hidden>
+        <div class="setting-info">
+          <div id="arPlacementName" class="setting-name">AR Placement</div>
+
+          <div
+            id="arPlacementDescription"
+            class="setting-description"
+            aria-live="polite"
+          >
+            Place the selected deity in your space
+          </div>
+        </div>
+
+        <label class="toggle">
+          <input type="checkbox" id="arPlacementToggle" disabled />
+
+          <span class="toggle-slider"></span>
+        </label>
+      </div>
+
+      <!-- RESET VIEW -->
+
+      <div class="setting-row">
+        <div class="setting-info">
+          <div id="resetViewName" class="setting-name">Reset View</div>
+
+          <div id="resetViewDescription" class="setting-description">
+            Reset the model and camera to the default view
+          </div>
+        </div>
+
+        <button
+          id="resetViewButton"
+          class="reset-view-button"
+          aria-label="Reset View"
+          title="Reset View"
+        >
+          ↻
+        </button>
+      </div>
+    </div>
+
+    <!-- ========================================================
+   INFORMATION
+========================================================= -->
+
+    <section class="god-info">
+      <div id="godTitle" class="god-title">The Divine Couple</div>
+
+      <h1 id="godName" class="god-name">Radha Krishna</h1>
+
+      <p id="godDescription" class="god-description">
+        Radha and Krishna represent the eternal bond of divine love, devotion
+        and spiritual unity.
+      </p>
+
+      <div id="details" class="details"></div>
+    </section>
+
+    <!-- VIRTUAL DIYA + FLOWERS + PRAYER SOUNDS -->
+
+    <div class="virtual-diya-container">
+      <button
+        id="virtualDiyaButton"
+        class="virtual-diya-button"
+        aria-label="Offer Virtual Diya"
+        title="Offer Virtual Diya"
+      >
+        <img
+          class="virtual-diya-icon"
+          src="./assets/icons/diya.webp"
+          alt="Diya"
+        />
+        <span id="virtualDiyaText">Offer Virtual Diya</span>
+      </button>
+
+      <button
+        id="flowerOfferingButton"
+        class="virtual-diya-button flower-offering-button"
+        aria-label="Offer Flowers"
+        title="Offer Flowers"
+      >
+        <img
+          class="virtual-diya-icon"
+          src="./assets/icons/flower.webp"
+          alt="Flowers"
+        />
+        <span id="flowerOfferingText">Offer Flowers</span>
+      </button>
+
+      <button
+        id="templeBellButton"
+        class="virtual-diya-button prayer-sound-button"
+        aria-label="Temple Bell"
+        title="Temple Bell"
+      >
+        <img
+          class="virtual-diya-icon"
+          src="./assets/icons/bell.webp"
+          alt="Temple Bell"
+        />
+        <span id="templeBellText">Temple Bell</span>
+      </button>
+
+      <button
+        id="fastBellButton"
+        class="virtual-diya-button prayer-sound-button"
+        aria-label="Pooja Bell"
+        title="Pooja Bell"
+      >
+        <img
+          class="virtual-diya-icon"
+          src="./assets/icons/ganti.webp"
+          alt="Pooja Bell"
+        />
+        <span id="fastBellText">Pooja Bell</span>
+      </button>
+
+      <button
+        id="shankhButton"
+        class="virtual-diya-button prayer-sound-button"
+        aria-label="Shankh Sound"
+        title="Shankh Sound"
+      >
+        <img
+          class="virtual-diya-icon"
+          src="./assets/icons/shankh.webp"
+          alt="Shankh"
+        />
+        <span id="shankhText">Shankh</span>
+      </button>
+    </div>
+
+    <!-- ========================================================
+   GOD SELECTOR
+========================================================= -->
+
+    <div id="godSelector" class="god-selector"></div>
+
+    <!-- ========================================================
+   MODEL LOADING
+========================================================= -->
+
+    <div
+      id="modelLoader"
+      class="model-loader"
+      aria-live="polite"
+      aria-hidden="true"
+    >
+      <div class="model-loader-card">
+        <div class="model-loader-spinner" aria-hidden="true"></div>
+      </div>
+    </div>
+
+    <!-- ========================================================
+   TRANSITION
+========================================================= -->
+
+    <div id="transition" class="transition"></div>
+
+    <script src="./scripts/darshan.js"></script>
+  </body>
+</html>

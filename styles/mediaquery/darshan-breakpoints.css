@@ -1,0 +1,331 @@
+@media (max-width: 640px) {
+  .virtual-diya-container {
+    gap: 8px;
+  }
+}
+
+@media (max-width: 900px) {
+  .brand {
+    left: 20px;
+    top: 24px;
+  }
+
+  .top-controls {
+    top: 18px;
+    right: 18px;
+  }
+
+  .music-button,
+  .language-button,
+  .settings-button,
+  .bell-button,
+  .story-speech-button {
+    width: 42px;
+    height: 42px;
+    min-height: 42px;
+    flex-basis: 42px;
+  }
+
+  .language-button {
+    width: 54px;
+    height: 54px;
+    min-height: 54px;
+    flex-basis: 54px;
+  }
+
+  .settings-popup {
+    top: 72px;
+    right: 18px;
+    width: 290px;
+  }
+
+  .god-info {
+    left: 6%;
+    top: 13%;
+    transform: none;
+    width: 42%;
+  }
+
+  .god-name {
+    font-size: 50px;
+  }
+
+  .god-description {
+    font-size: 12px;
+    line-height: 1.6;
+  }
+
+  .detail-row {
+    padding: 7px 0;
+  }
+
+  .model-hint {
+    display: none;
+  }
+
+  .god-selector {
+    bottom: 15px;
+    width: 96vw;
+    gap: 7px;
+    max-width: 96vw;
+    overflow-x: auto;
+    justify-content: flex-start;
+    padding: 5px 12px 8px;
+    padding-bottom: 4px;
+  }
+
+  .god-card {
+    flex-shrink: 0;
+    width: 65px;
+    height: 78px;
+  }
+
+  .god-card.active {
+    width: 80px;
+    height: 94px;
+  }
+
+  .card-name {
+    right: 4px;
+    bottom: 7px;
+    left: 4px;
+    transform: none;
+    font-size: 9px;
+    line-height: 1.05;
+    white-space: normal;
+  }
+
+  .virtual-diya-container {
+    right: 18px;
+    bottom: 22px;
+  }
+}
+
+@media (max-width: 600px) {
+  body {
+    overflow: hidden;
+  }
+
+  .brand {
+    left: 14px;
+    top: 21px;
+    font-size: 8px;
+    letter-spacing: 3px;
+  }
+
+  .brand img {
+    width: 35px;
+    height: 35px;
+  }
+
+  .top-controls {
+    top: 18px;
+    right: 18px;
+    left: auto;
+    transform: none;
+    gap: 7px;
+  }
+
+  .music-button,
+  .language-button,
+  .settings-button,
+  .bell-button,
+  .story-speech-button {
+    width: 44px;
+    height: 44px;
+    min-height: 44px;
+    flex-basis: 44px;
+  }
+
+  .top-controls .language-button,
+  .top-controls .story-speech-button {
+    font-size: 11px;
+    width: 44px;
+    height: 44px;
+    min-height: 44px;
+    flex: 0 0 44px;
+  }
+
+  .settings-button {
+    font-size: 17px;
+  }
+
+  .bell-icon {
+    width: 17px;
+    height: 17px;
+  }
+
+  .settings-popup {
+    top: 68px;
+    right: 18px;
+    width: calc(100vw - 36px);
+    max-width: 310px;
+  }
+
+  .god-info {
+    top: 13%;
+    left: 22px;
+    width: calc(100% - 44px);
+    text-align: center;
+  }
+
+  .god-title {
+    font-size: 8px;
+    letter-spacing: 3px;
+    margin-bottom: 10px;
+  }
+
+  .god-name {
+    font-size: 46px;
+    margin-bottom: 10px;
+  }
+
+  .god-description {
+    margin: 0 auto 12px;
+    max-width: 320px;
+    font-size: 11px;
+  }
+
+  .details {
+    display: none;
+  }
+
+  .virtual-diya-container {
+    right: 18px;
+    bottom: 18px;
+    gap: 10px;
+  }
+
+  .virtual-diya-button {
+    width: 48px;
+    height: 48px;
+    min-height: 48px;
+    flex-basis: 48px;
+    padding: 0;
+  }
+
+  .virtual-diya-icon {
+    width: 25px;
+    height: 25px;
+  }
+
+  .god-selector {
+    width: 100%;
+    overflow-x: auto;
+    justify-content: flex-start;
+    padding: 5px 20px 8px;
+    scrollbar-width: thin;
+    scrollbar-color: transparent transparent;
+  }
+
+  .god-selector::-webkit-scrollbar {
+    height: 6px;
+    background: transparent;
+  }
+
+  .god-selector::-webkit-scrollbar-track {
+    background: transparent;
+    border-radius: 999px;
+  }
+
+  .god-selector::-webkit-scrollbar-thumb {
+    background: transparent;
+    border-radius: 999px;
+  }
+
+  .god-card {
+    flex-shrink: 0;
+    width: 68px;
+    height: 82px;
+  }
+
+  .god-card.active {
+    width: 80px;
+    height: 96px;
+  }
+
+  .model-loader-card {
+    width: 98px;
+    height: 98px;
+  }
+
+  .card-name {
+    left: 7px;
+    bottom: 7px;
+    font-size: 10px;
+  }
+
+  .reset-view-button {
+    width: 38px;
+    height: 38px;
+    font-size: 17px;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 900px) {
+  .virtual-diya-container {
+    top: auto;
+    right: 18px;
+    bottom: 132px;
+    left: auto;
+    transform: none;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .virtual-diya-button {
+    width: 48px;
+    height: 48px;
+    min-height: 48px;
+    flex-basis: 48px;
+  }
+
+  .virtual-diya-icon {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 900px) and (max-height: 700px) {
+  .god-info {
+    top: 11%;
+  }
+}
+
+@media (max-width: 600px) {
+  .god-info {
+    display: none;
+  }
+
+  .card-name {
+    right: 4px;
+    bottom: 6px;
+    left: 4px;
+    transform: none;
+    font-size: 8px;
+    line-height: 1.05;
+    white-space: normal;
+  }
+
+  .virtual-diya-container {
+    top: auto;
+    right: auto;
+    bottom: 138px;
+    left: 50%;
+    transform: translateX(-50%);
+    flex-direction: row;
+    gap: 4px;
+  }
+
+  .virtual-diya-button {
+    width: 42px;
+    height: 42px;
+    min-height: 42px;
+    flex-basis: 42px;
+  }
+
+  .virtual-diya-icon {
+    width: 26px;
+    height: 26px;
+  }
+}
