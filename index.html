@@ -39,7 +39,10 @@
     />
 
     <!-- GSAP -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+    ></script>
 
     <link rel="stylesheet" href="./styles/index.css" />
     <link rel="stylesheet" href="./styles/mediaquery/index-breakpoints.css" />
@@ -47,15 +50,11 @@
 
   <body>
     <main class="page">
-      <!-- =================================
-           CURSOR FOLLOWING LIGHT
-      ================================== -->
+      <!-- CURSOR FOLLOWING LIGHT -->
 
       <span class="cursor-glow" aria-hidden="true"></span>
 
-      <!-- =================================
-           AMBIENT GLOWS
-      ================================== -->
+      <!-- AMBIENT GLOWS -->
 
       <span class="ambient-glow glow-one" aria-hidden="true"></span>
 
@@ -65,16 +64,12 @@
 
       <span class="ambient-glow glow-four" aria-hidden="true"></span>
 
-      <!-- =================================
-           DECORATIVE CORNERS
-      ================================== -->
+      <!-- DECORATIVE CORNERS -->
 
       <span class="corner-mark corner-one"></span>
       <span class="corner-mark corner-two"></span>
 
-      <!-- =================================
-           NAVIGATION
-      ================================== -->
+      <!-- NAVIGATION -->
 
       <header>
         <!-- Logo -->
@@ -89,7 +84,7 @@
           <!-- GitHub -->
 
           <a
-            href="https://github.com/"
+            href="https://github.com/KrishBharadwaj5678/"
             class="social-link"
             aria-label="GitHub"
             target="_blank"
@@ -105,7 +100,7 @@
           <!-- Instagram -->
 
           <a
-            href="https://www.instagram.com/"
+            href="https://www.instagram.com/__krishh__23"
             class="social-link"
             aria-label="Instagram"
             target="_blank"
@@ -121,7 +116,7 @@
           <!-- YouTube -->
 
           <a
-            href="https://www.youtube.com/"
+            href="https://www.youtube.com/@KrishFullStackDev"
             class="social-link"
             aria-label="YouTube"
             target="_blank"
@@ -136,9 +131,7 @@
         </nav>
       </header>
 
-      <!-- =================================
-           HERO
-      ================================== -->
+      <!-- HERO -->
 
       <section class="hero" id="experience">
         <h1 class="headline">
@@ -157,9 +150,7 @@
           </span>
         </h1>
 
-        <!-- =================================
-             EXPERIENCE BUTTON
-        ================================== -->
+        <!-- EXPERIENCE BUTTON -->
 
         <div class="actions">
           <a
@@ -202,12 +193,78 @@
         <div class="devotional-closer">
           <div class="temple-divider" aria-hidden="true"><span></span></div>
           <p class="devotional-note">
-            Find stillness in the presence of the divine.
+            Discover sacred stories and experience devotion in a new way.
           </p>
+        </div>
+
+        <button
+          class="scroll-cue"
+          type="button"
+          aria-label="Scroll down to explore the deity gallery"
+          title="Scroll to explore"
+        >
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M12 4v15m-6-6 6 6 6-6" />
+          </svg>
+        </button>
+      </section>
+
+      <section class="deity-discovery" aria-labelledby="deityDiscoveryTitle">
+        <div class="discovery-head">
+          <div>
+            <p class="discovery-kicker">YOUR JOURNEY STARTS HERE</p>
+            <h2 id="deityDiscoveryTitle">A world of divine forms.</h2>
+          </div>
+          <p class="discovery-intro">
+            Explore immersive darshan, sacred stories, and devotional
+            experiences, all in one place.
+          </p>
+        </div>
+
+        <div class="deity-grid">
+          <a class="deity-card" href="./darshan.html?god=ganesha">
+            <img src="./assets/images/ganesha.webp" alt="" loading="lazy" />
+            <div class="deity-card-meta">
+              <span>WISDOM &amp; NEW BEGINNINGS</span>
+              <h3>Ganesha</h3>
+            </div>
+            <span class="deity-card-arrow" aria-hidden="true">↗</span>
+          </a>
+
+          <a class="deity-card" href="./darshan.html?god=radhakrishna">
+            <img
+              src="./assets/images/radhakrishna.webp"
+              alt=""
+              loading="lazy"
+            />
+            <div class="deity-card-meta">
+              <span>DIVINE LOVE &amp; DEVOTION</span>
+              <h3>Radha Krishna</h3>
+            </div>
+            <span class="deity-card-arrow" aria-hidden="true">↗</span>
+          </a>
+
+          <a class="deity-card" href="./darshan.html?god=sitaram">
+            <img src="./assets/images/sitaram.webp" alt="" loading="lazy" />
+            <div class="deity-card-meta">
+              <span>DHARMA &amp; COMPASSION</span>
+              <h3>Sita Ram</h3>
+            </div>
+            <span class="deity-card-arrow" aria-hidden="true">↗</span>
+          </a>
+
+          <a class="deity-card" href="./darshan.html?god=shiva">
+            <img src="./assets/images/shiva.webp" alt="" loading="lazy" />
+            <div class="deity-card-meta">
+              <span>STILLNESS &amp; TRANSFORMATION</span>
+              <h3>Shiva</h3>
+            </div>
+            <span class="deity-card-arrow" aria-hidden="true">↗</span>
+          </a>
         </div>
       </section>
     </main>
 
-    <script src="./scripts/index.js"></script>
+    <script defer src="./scripts/index.js"></script>
   </body>
 </html>

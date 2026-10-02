@@ -1,635 +1,4 @@
-/* ==========================================================
-     GOD DATA
-  ========================================================== */
-
-const gods = [
-  {
-    name: "Ganesha",
-    nameHi: "गणेश",
-
-    title: "Remover of Obstacles",
-    titleHi: "विघ्नहर्ता",
-
-    description:
-      "Ganesha is revered as the remover of obstacles and the lord of beginnings, wisdom and prosperity.",
-
-    descriptionHi:
-      "गणेश जी को विघ्नों को दूर करने वाले तथा शुभारंभ, ज्ञान और समृद्धि के देवता के रूप में पूजा जाता है।",
-
-    narrationFolderName: "Ganesha",
-
-    model: "assets/models/ganesha.glb",
-
-    modelPosition: { x: 2.1, y: 1.9, z: 0 },
-
-    modelRotationY: -0.1,
-
-    mobileModelRotationY: 0,
-
-    image: "assets/images/ganesha.webp",
-
-    music: "assets/chanting/ganesha.mp3",
-
-    details: {
-      "Known As": "Ganapati · Vinayaka · Vighnaharta",
-
-      Role: "Lord of beginnings and wisdom",
-
-      Represents: "Wisdom · Prosperity · New beginnings",
-
-      Symbol: "Elephant head · Modak",
-
-      Vehicle: "Mouse",
-    },
-
-    detailsHi: {
-      "अन्य नाम": "गणपति · विनायक · विघ्नहर्ता",
-
-      भूमिका: "शुभारंभ और ज्ञान के देवता",
-
-      प्रतिनिधित्व: "ज्ञान · समृद्धि · नई शुरुआत",
-
-      प्रतीक: "हाथी का सिर · मोदक",
-
-      वाहन: "मूषक",
-    },
-  },
-
-  {
-    name: "Brahma",
-    nameHi: "ब्रह्मा",
-
-    title: "The Creator",
-    titleHi: "सृष्टिकर्ता",
-
-    description:
-      "Brahma is revered as the creator of the universe, representing knowledge, creation, and the beginning of cosmic order.",
-
-    descriptionHi:
-      "ब्रह्मा को ब्रह्मांड के सृष्टिकर्ता के रूप में पूजा जाता है, जो ज्ञान, सृष्टि और ब्रह्मांडीय व्यवस्था के प्रारंभ का प्रतीक हैं।",
-
-    narrationFolderName: "Brahma",
-
-    model: "assets/models/brahma.glb",
-
-    modelPosition: { x: 2.2, y: 0.16, z: 0 },
-
-    modelRotationY: -0.13,
-
-    mobileModelRotationY: 0,
-
-    image: "assets/images/brahma.webp",
-
-    music: "assets/chanting/brahma.mp3",
-
-    details: {
-      "Known As": "Svayambhuva · Prajapati · Vedic Creator",
-
-      Role: "Lord of creation",
-
-      Represents: "Creation · Knowledge · Cosmic order",
-
-      Symbols: "Vedas · Hamsa · Kamandalu",
-
-      Vehicle: "Hamsa",
-    },
-
-    detailsHi: {
-      "अन्य नाम": "स्वयम्भुवा · प्रजापति · वैदिक सृष्टिकर्ता",
-
-      भूमिका: "सृष्टि के देवता",
-
-      प्रतिनिधित्व: "सृष्टि · ज्ञान · ब्रह्मांडीय व्यवस्था",
-
-      प्रतीक: "वेद · हंस · कमंडल",
-
-      वाहन: "हंस",
-    },
-  },
-  {
-    name: "Saraswati",
-    nameHi: "सरस्वती",
-
-    title: "The Goddess of Wisdom",
-    titleHi: "ज्ञान की देवी",
-
-    description:
-      "Saraswati represents wisdom, learning, music, creativity and the divine flow of knowledge.",
-
-    descriptionHi:
-      "सरस्वती विद्या, ज्ञान, संगीत, रचनात्मकता और दिव्य ज्ञान के प्रवाह का प्रतीक हैं।",
-
-    narrationFolderName: "Saraswati",
-
-    model: "assets/models/saraswati.glb",
-
-    modelPosition: { x: 2.03, y: 2.01, z: 0 },
-
-    modelRotationY: -0.2,
-
-    mobileModelRotationY: 0,
-
-    image: "assets/images/saraswati.webp",
-
-    music: "assets/chanting/saraswati.mp3",
-
-    details: {
-      "Known As": "Vagdevi · Bharati · Sharada",
-
-      Role: "Goddess of knowledge and arts",
-
-      Represents: "Wisdom · Creativity · Learning",
-
-      Symbols: "Veena · Book · Swan",
-
-      Vehicle: "Swan",
-    },
-
-    detailsHi: {
-      "अन्य नाम": "वाग्देवी · भारती · शारदा",
-
-      भूमिका: "ज्ञान और कला की देवी",
-
-      प्रतिनिधित्व: "ज्ञान · रचना · शिक्षा",
-
-      प्रतीक: "वीणा · पुस्तक · हंस",
-
-      वाहन: "हंस",
-    },
-  },
-
-  {
-    name: "Lakshmi",
-    nameHi: "लक्ष्मी",
-
-    title: "The Goddess of Prosperity",
-    titleHi: "समृद्धि की देवी",
-
-    description:
-      "Lakshmi symbolizes wealth, fortune, auspiciousness, compassion, and grace that bring balance and abundance to life.",
-
-    descriptionHi:
-      "लक्ष्मी समृद्धि, सौभाग्य, शुभता, दया और कृपा का प्रतीक हैं, जो जीवन में संतुलन और वैभव लाती हैं।",
-
-    narrationFolderName: "Lakshmi",
-
-    model: "assets/models/lakshmi.glb",
-
-    modelPosition: { x: 2.05, y: 2.06, z: 0 },
-
-    modelRotationY: -0.2,
-
-    mobileModelRotationY: 0,
-
-    image: "assets/images/lakshmi.webp",
-
-    music: "assets/chanting/lakshmi.mp3",
-
-    details: {
-      "Known As": "Shri · Padma · Kamala",
-
-      Role: "Goddess of wealth and auspiciousness",
-
-      Represents: "Prosperity · Fortune · Grace",
-
-      Symbols: "Lotus · Gold coins · Elephants",
-
-      Vehicle: "Owl",
-    },
-
-    detailsHi: {
-      "अन्य नाम": "श्री · पद्मा · कमला",
-
-      भूमिका: "समृद्धि और शुभता की देवी",
-
-      प्रतिनिधित्व: "वैभव · सौभाग्य · कृपा",
-
-      प्रतीक: "कमल · स्वर्ण मुद्राएँ · हाथी",
-
-      वाहन: "उल्लू",
-    },
-  },
-
-  {
-    name: "Kali",
-    nameHi: "काली",
-
-    title: "The Fierce Protector",
-    titleHi: "क्रूरा समरूप रक्षक",
-
-    description:
-      "Kali represents divine power, courage, destruction of evil and the fierce protection of truth and justice.",
-
-    descriptionHi:
-      "काली दिव्य शक्ति, साहस, असुरों के विनाश और सत्य तथा न्याय की कठोर रक्षा का प्रतीक हैं।",
-
-    narrationFolderName: "Kali",
-
-    model: "assets/models/kali.glb",
-
-    modelPosition: { x: 2.05, y: 2.01, z: 0 },
-
-    modelRotationY: -0.15,
-
-    mobileModelRotationY: 0,
-
-    image: "assets/images/kali.webp",
-
-    music: "assets/chanting/kali.mp3",
-
-    details: {
-      "Known As": "Kali Mata · Shyama · Bhadrakali",
-
-      Role: "Goddess of time, power and transformation",
-
-      Represents: "Power · Destruction · Liberation",
-
-      Symbols: "Sword · Skull · Flame",
-
-      Vehicle: "Lion",
-    },
-
-    detailsHi: {
-      "अन्य नाम": "काली माता · श्यामा · भद्रकाली",
-
-      भूमिका: "समय, शक्ति और परिवर्तन की देवी",
-
-      प्रतिनिधित्व: "शक्ति · विनाश · मुक्ति",
-
-      प्रतीक: "तलवार · खोपड़ी · अग्नि",
-
-      वाहन: "सिंह",
-    },
-  },
-
-  {
-    name: "Shani Dev",
-    nameHi: "शनि देव",
-
-    title: "The Lord of Justice",
-    titleHi: "न्याय के देवता",
-
-    description:
-      "Shani Dev symbolizes discipline, justice, karma, and the lessons that lead to spiritual maturity and balance.",
-
-    descriptionHi:
-      "शनि देव अनुशासन, न्याय, कर्म और उन शिक्षाओं का प्रतीक हैं, जो आध्यात्मिक परिपक्वता और संतुलन की ओर ले जाती हैं।",
-
-    narrationFolderName: "ShaniDev",
-
-    model: "assets/models/shanidev.glb",
-
-    modelPosition: { x: 2.05, y: 1.92, z: 0 },
-
-    modelRotationY: -0.2,
-
-    mobileModelRotationY: 0,
-
-    image: "assets/images/shanidev.webp",
-
-    music: "assets/chanting/shanidev.mp3",
-
-    details: {
-      "Known As": "Shanaishchara · Saturn",
-
-      Role: "Lord of justice and karma",
-
-      Represents: "Discipline · Karma · Truth",
-
-      Symbols: "Sickle · Dark zodiac · Hourglass",
-
-      Vehicle: "Crow",
-    },
-
-    detailsHi: {
-      "अन्य नाम": "शनैश्चर · शनि",
-
-      भूमिका: "न्याय और कर्म के देवता",
-
-      प्रतिनिधित्व: "अनुशासन · कर्म · सत्य",
-
-      प्रतीक: "हंसिया · अंधेरे राशि · समय की घड़ी",
-
-      वाहन: "कौआ",
-    },
-  },
-
-  {
-    name: "Vishnu",
-    nameHi: "विष्णु",
-
-    title: "The Preserver of the Universe",
-    titleHi: "ब्रह्मांड के पालनकर्ता",
-
-    description:
-      "Vishnu is associated with preservation, protection and the restoration of cosmic balance.",
-
-    descriptionHi:
-      "विष्णु भगवान संरक्षण, सुरक्षा और ब्रह्मांडीय संतुलन की पुनर्स्थापना से जुड़े हैं।",
-
-    narrationFolderName: "Vishnu",
-
-    model: "assets/models/vishnu.glb",
-
-    modelPosition: { x: 2.05, y: 0.3, z: 0 },
-
-    modelRotationY: -0.2,
-
-    mobileModelRotationY: 0,
-
-    image: "assets/images/vishnu.webp",
-
-    music: "assets/chanting/vishnu.mp3",
-
-    details: {
-      "Known As": "Narayana · Hari · Jagannatha",
-
-      Role: "Preserver of cosmic order",
-
-      Represents: "Protection · Balance · Dharma",
-
-      Symbols: "Conch · Chakra · Lotus",
-
-      Vehicle: "Garuda",
-    },
-
-    detailsHi: {
-      "अन्य नाम": "नारायण · हरि · जगन्नाथ",
-
-      भूमिका: "ब्रह्मांडीय व्यवस्था के पालनकर्ता",
-
-      प्रतिनिधित्व: "सुरक्षा · संतुलन · धर्म",
-
-      प्रतीक: "शंख · चक्र · कमल",
-
-      वाहन: "गरुड़",
-    },
-  },
-
-  {
-    name: "Shiva",
-    nameHi: "शिव",
-
-    title: "The Eternal Consciousness",
-    titleHi: "शाश्वत चेतना",
-
-    description:
-      "Shiva represents transformation, meditation and the eternal cycle of creation and dissolution.",
-
-    descriptionHi:
-      "शिव परिवर्तन, ध्यान तथा सृष्टि और संहार के शाश्वत चक्र का प्रतिनिधित्व करते हैं।",
-
-    narrationFolderName: "Shiva",
-
-    model: "assets/models/shiva.glb",
-
-    modelPosition: { x: 2.05, y: 1.9, z: 0 },
-
-    modelRotationY: -0.1,
-
-    mobileModelRotationY: 0,
-
-    image: "assets/images/shiva.webp",
-
-    music: "assets/chanting/shiva.mp3",
-
-    details: {
-      "Known As": "Mahadeva · Shankara · Neelkanth",
-
-      Role: "Lord of transformation",
-
-      Represents: "Meditation · Power · Transformation",
-
-      Symbols: "Trident · Crescent moon · Third eye",
-
-      Consort: "Parvati",
-    },
-
-    detailsHi: {
-      "अन्य नाम": "महादेव · शंकर · नीलकंठ",
-
-      भूमिका: "परिवर्तन के देवता",
-
-      प्रतिनिधित्व: "ध्यान · शक्ति · परिवर्तन",
-
-      प्रतीक: "त्रिशूल · अर्धचंद्र · तीसरा नेत्र",
-
-      अर्धांगिनी: "पार्वती",
-    },
-  },
-
-  {
-    name: "Radha Krishna",
-    nameHi: "राधा कृष्ण",
-
-    title: "The Divine Couple",
-    titleHi: "दिव्य युगल",
-
-    description:
-      "Radha and Krishna represent the eternal bond of divine love, devotion and spiritual unity.",
-
-    descriptionHi:
-      "राधा और कृष्ण दिव्य प्रेम, भक्ति और आध्यात्मिक एकता के शाश्वत बंधन का प्रतीक हैं। उनका संबंध आत्मा और परमात्मा के बीच पवित्र प्रेम और भक्ति को दर्शाता है।",
-
-    narrationFolderName: "RadhaKrishna",
-
-    model: "assets/models/radhakrishna.glb",
-
-    modelPosition: { x: 2.05, y: 2, z: 0 },
-
-    modelRotationY: -0.2,
-
-    mobileModelRotationY: 0,
-
-    image: "assets/images/radhakrishna.webp",
-
-    music: "assets/chanting/radhakrishna.mp3",
-
-    details: {
-      "Known As": "Radha Madhava · Radha Govinda",
-
-      Role: "Embodiments of divine love and devotion",
-
-      Represents: "Love · Devotion · Spiritual Unity · Bliss",
-
-      Symbols: "Flute · Peacock feather · Lotus",
-
-      Companion: "Radha",
-    },
-
-    detailsHi: {
-      "अन्य नाम": "राधा माधव · राधा गोविंद · राधा गोपाल",
-
-      भूमिका: "दिव्य प्रेम और भक्ति के स्वरूप",
-
-      प्रतिनिधित्व: "प्रेम · भक्ति · आध्यात्मिक एकता · आनंद",
-
-      प्रतीक: "बांसुरी · मोर पंख · कमल",
-
-      साथी: "राधा",
-    },
-  },
-
-  {
-    name: "Hanuman",
-    nameHi: "हनुमान",
-
-    title: "The Embodiment of Devotion",
-    titleHi: "भक्ति के स्वरूप",
-
-    description:
-      "Hanuman represents strength, courage, humility and unwavering devotion to Lord Rama.",
-
-    descriptionHi:
-      "हनुमान जी शक्ति, साहस, विनम्रता और भगवान राम के प्रति अटूट भक्ति के प्रतीक हैं।",
-
-    narrationFolderName: "Hanuman",
-
-    model: "assets/models/hanuman.glb",
-
-    modelPosition: { x: 2.05, y: 1.9, z: 0 },
-
-    modelRotationY: -0.1,
-
-    mobileModelRotationY: 0,
-
-    image: "assets/images/hanuman.webp",
-
-    music: "assets/chanting/hanuman.mp3",
-
-    details: {
-      "Known As": "Anjaneya · Bajrangbali · Maruti",
-
-      Role: "Devotee, protector and warrior",
-
-      Represents: "Strength · Courage · Devotion",
-
-      Symbol: "Mace · Mountain",
-
-      Father: "Vayu",
-    },
-
-    detailsHi: {
-      "अन्य नाम": "अंजनेय · बजरंगबली · मारुति",
-
-      भूमिका: "भक्त, रक्षक और योद्धा",
-
-      प्रतिनिधित्व: "शक्ति · साहस · भक्ति",
-
-      प्रतीक: "गदा · पर्वत",
-
-      पिता: "वायु देव",
-    },
-  },
-
-  {
-    name: "Sita Ram",
-    nameHi: "सीता राम",
-
-    title: "The Ideal Couple",
-    titleHi: "आदर्श युगल",
-
-    description:
-      "Sita and Ram symbolize devotion, righteousness, compassion and the sacred ideal of dharma in life.",
-
-    descriptionHi:
-      "सीता और राम भक्ति, नैतिकता, दया और जीवन में धर्म के पवित्र आदर्श का प्रतीक हैं।",
-
-    narrationFolderName: "SitaRam",
-
-    model: "assets/models/sitaram.glb",
-
-    modelPosition: { x: 2.05, y: 1.92, z: 0 },
-
-    modelRotationY: -0.15,
-
-    mobileModelRotationY: 0,
-
-    image: "assets/images/sitaram.webp",
-
-    music: "assets/chanting/sitaram.mp3",
-
-    details: {
-      "Known As": "Rama Rajya · Sita Ram · Maryada Purushottam",
-
-      Role: "Embodiments of devotion and dharma",
-
-      Represents: "Love · Duty · Integrity · Compassion",
-
-      Symbols: "Bow · Lotus · Golden temple",
-
-      Companion: "Sita",
-    },
-
-    detailsHi: {
-      "अन्य नाम": "राम राज्य · सीता राम · मर्यादा पुरुषोत्तम",
-
-      भूमिका: "भक्ति और धर्म के प्रतीक",
-
-      प्रतिनिधित्व: "प्रेम · कर्तव्य · शील · दया",
-
-      प्रतीक: "धनुष · कमल · स्वर्ण मंदिर",
-
-      साथी: "सीता",
-    },
-  },
-
-  {
-    name: "Durga",
-    nameHi: "दुर्गा",
-
-    title: "The Divine Mother",
-    titleHi: "दिव्य माता",
-
-    description:
-      "Durga represents divine strength, courage, protection and the victory of good over evil.",
-
-    descriptionHi:
-      "दुर्गा दिव्य शक्ति, साहस, रक्षा और अशुभ पर शुभ की विजय का प्रतीक हैं।",
-
-    narrationFolderName: "Durga",
-
-    model: "assets/models/durga.glb",
-
-    modelPosition: { x: 2.05, y: 2.08, z: 0 },
-
-    modelRotationY: -0.25,
-
-    mobileModelRotationY: 0,
-
-    image: "assets/images/durga.webp",
-
-    music: "assets/chanting/durga.mp3",
-
-    details: {
-      "Known As": "Shailaputri · Devi · Mata Rani",
-
-      Role: "Protector and embodiment of divine power",
-
-      Represents: "Strength · Fearlessness · Protection",
-
-      Symbols: "Trident · Lion · Lotus",
-
-      Vehicle: "Lion",
-    },
-
-    detailsHi: {
-      "अन्य नाम": "शैलपुत्री · देवी · माता रानी",
-
-      भूमिका: "रक्षक और दिव्य शक्ति का स्वरूप",
-
-      प्रतिनिधित्व: "शक्ति · निर्भीकता · सुरक्षा",
-
-      प्रतीक: "त्रिशूल · सिंह · कमल",
-
-      वाहन: "सिंह",
-    },
-  },
-];
-
-/* ==========================================================
-     VARIABLES
-  ========================================================== */
+/* Variables */
 
 let scene;
 let camera;
@@ -654,7 +23,19 @@ let arModelSnapshot = null;
 
 let arModelPlaced = false;
 
-let currentGodIndex = 8;
+const requestedGod = new URLSearchParams(window.location.search).get("god");
+const requestedGodIndex = requestedGod
+  ? gods.findIndex(
+      (god) =>
+        god.name.replace(/[^a-z0-9]/gi, "").toLowerCase() ===
+        requestedGod.replace(/[^a-z0-9]/gi, "").toLowerCase(),
+    )
+  : -1;
+
+let currentGodIndex = requestedGodIndex >= 0 ? requestedGodIndex : 8;
+
+const narrationBaseUrl =
+  "https://duijvlhczqtcbtnwvrvm.supabase.co/storage/v1/object/public/Divyatra/narrations";
 
 function getModelRotationY(god) {
   if (window.innerWidth <= 600) {
@@ -807,9 +188,7 @@ let narrationRequestId = 0;
 
 let languageTransitionTimer = null;
 
-/* ==========================================================
-     PRAYER SOUNDS
-  ========================================================== */
+/* Prayer Sounds */
 
 const templeBellButton = document.getElementById("templeBellButton");
 const fastBellButton = document.getElementById("fastBellButton");
@@ -829,9 +208,7 @@ Object.values(prayerSounds).forEach((sound) => {
   sound.volume = 0.7;
 });
 
-/* ==========================================================
-     VIRTUAL DIYA VARIABLES
-  ========================================================== */
+/* Virtual Diya Variables */
 
 let virtualDiya = null;
 
@@ -841,9 +218,7 @@ let diyaLight = null;
 
 let diyaFlame = null;
 
-/* ==========================================================
-     FLOWER OFFERING VARIABLES
-  ========================================================== */
+/* Flower Offering Variables */
 
 let flowerOfferingGroup = null;
 
@@ -859,9 +234,7 @@ dracoLoader.setDecoderPath("https://www.gstatic.com/draco/v1/decoders/");
 
 loader.setDRACOLoader(dracoLoader);
 
-/* ==========================================================
-     DOM
-  ========================================================== */
+/* DOM */
 
 const godName = document.getElementById("godName");
 
@@ -883,7 +256,7 @@ const transition = document.getElementById("transition");
 
 const modelLoader = document.getElementById("modelLoader");
 
-/* VIRTUAL DIYA */
+/* Virtual Diya */
 
 const virtualDiyaButton = document.getElementById("virtualDiyaButton");
 
@@ -893,13 +266,13 @@ const storySpeechButton = document.getElementById("storySpeechButton");
 
 const storySpeechText = document.getElementById("storySpeechText");
 
-/* FLOWER OFFERING */
+/* Flower Offering */
 
 const flowerOfferingButton = document.getElementById("flowerOfferingButton");
 
 const flowerOfferingText = document.getElementById("flowerOfferingText");
 
-/* SETTINGS */
+/* Settings */
 
 const settingsButton = document.getElementById("settingsButton");
 
@@ -937,25 +310,10 @@ const resetViewName = document.getElementById("resetViewName");
 
 const resetViewDescription = document.getElementById("resetViewDescription");
 
-/* ==========================================================
-     PRAYER SOUND BUTTONS
-  ========================================================== */
+/* Prayer Sound Buttons */
 
 function playPrayerSound(soundName, button) {
-  const sound = prayerSounds[soundName];
-  if (!sound) return;
-
-  sound.currentTime = 0;
-  sound
-    .play()
-    .then(() => {
-      button.classList.remove("ringing");
-      void button.offsetWidth;
-      button.classList.add("ringing");
-    })
-    .catch((error) => {
-      console.log("Prayer sound could not play:", error);
-    });
+  window.DivyatraComponents.prayerSounds.play(soundName, button);
 }
 
 templeBellButton.addEventListener("click", () => {
@@ -976,14 +334,12 @@ shankhButton.addEventListener("click", () => {
   });
 });
 
-/* ==========================================================
-     THREE.JS INITIALIZATION
-  ========================================================== */
+/* Three.js Initialization */
 
 function initThree() {
   scene = new THREE.Scene();
 
-  /* CAMERA */
+  /* Camera */
 
   camera = new THREE.PerspectiveCamera(
     42,
@@ -994,7 +350,7 @@ function initThree() {
 
   camera.position.set(0.8, 1.5, 5.5);
 
-  /* RENDERER */
+  /* Renderer */
 
   renderer = new THREE.WebGLRenderer({
     antialias: true,
@@ -1015,7 +371,7 @@ function initThree() {
 
   renderer.toneMappingExposure = 1.05;
 
-  /* SHADOWS */
+  /* Shadows */
 
   renderer.shadowMap.enabled = true;
 
@@ -1023,7 +379,7 @@ function initThree() {
 
   document.getElementById("scene").appendChild(renderer.domElement);
 
-  /* LIGHTING */
+  /* Lighting */
 
   const ambient = new THREE.AmbientLight(0xffffff, 0.4);
 
@@ -1053,11 +409,11 @@ function initThree() {
 
   scene.add(rimLight);
 
-  /* PARTICLES */
+  /* Particles */
 
   createParticles();
 
-  /* FLOWER OFFERING */
+  /* Flower Offering */
 
   flowerOfferingGroup = new THREE.Group();
 
@@ -1065,7 +421,7 @@ function initThree() {
 
   scene.add(flowerOfferingGroup);
 
-  /* CONTROLS */
+  /* Controls */
 
   controls = new THREE.OrbitControls(camera, renderer.domElement);
 
@@ -1095,16 +451,14 @@ function initThree() {
   arController.addEventListener("select", placeARModel);
   scene.add(arController);
 
-  /* DEFAULT MODEL */
+  /* Default Model */
 
   loadGod(currentGodIndex);
 
   renderer.setAnimationLoop(animate);
 }
 
-/* ==========================================================
-     PARTICLES
-  ========================================================== */
+/* Particles */
 
 function createParticles() {
   const particleCount = 250;
@@ -1140,9 +494,7 @@ function createParticles() {
   scene.add(particles);
 }
 
-/* ==========================================================
-     LOAD GOD
-  ========================================================== */
+/* Load God */
 
 function loadGod(index) {
   const god = gods[index];
@@ -1150,6 +502,13 @@ function loadGod(index) {
   const requestId = ++modelLoadRequestId;
 
   currentGodIndex = index;
+
+  const url = new URL(window.location.href);
+  url.searchParams.set(
+    "god",
+    god.name.replace(/[^a-z0-9]/gi, "").toLowerCase(),
+  );
+  window.history.replaceState(window.history.state, "", url);
 
   stopStorySpeech();
 
@@ -1165,17 +524,17 @@ function loadGod(index) {
     transition.classList.remove("show");
   }, 250);
 
-  /* HIDE ACTIVE DIYA */
+  /* Hide Active Diya */
 
   if (virtualDiya) {
     virtualDiya.visible = false;
   }
 
-  /* CLEAR ACTIVE FLOWERS */
+  /* Clear Active Flowers */
 
   clearFlowerOfferings();
 
-  /* REMOVE OLD MODEL */
+  /* Remove Old Model */
 
   if (currentModel) {
     scene.remove(currentModel);
@@ -1199,7 +558,7 @@ function loadGod(index) {
     currentModel = null;
   }
 
-  /* LOAD MODEL */
+  /* Load Model */
 
   loader.load(
     god.model,
@@ -1225,7 +584,7 @@ function loadGod(index) {
 
       currentModel = gltf.scene;
 
-      /* MODEL BOUNDS */
+      /* Model Bounds */
 
       const box = new THREE.Box3().setFromObject(currentModel);
 
@@ -1233,7 +592,7 @@ function loadGod(index) {
 
       const center = box.getCenter(new THREE.Vector3());
 
-      /* SIZE */
+      /* Size */
 
       const maxSize = Math.max(size.x, size.y, size.z);
 
@@ -1243,7 +602,7 @@ function loadGod(index) {
 
       currentModel.userData.baseScale = scale;
 
-      /* MODEL POSITION */
+      /* Model Position */
 
       const modelPosition = god.modelPosition || {
         x: 2.05,
@@ -1259,13 +618,13 @@ function loadGod(index) {
 
       currentModel.rotation.y = getModelRotationY(god);
 
-      /* ADD MODEL */
+      /* Add Model */
 
       scene.add(currentModel);
 
       applyResponsiveModelPosition();
 
-      /* MATERIALS */
+      /* Materials */
 
       currentModel.traverse((object) => {
         if (object.isMesh) {
@@ -1293,7 +652,7 @@ function loadGod(index) {
         }
       });
 
-      /* CAMERA */
+      /* Camera */
 
       controls.target.set(0.8, 1.55, 0);
 
@@ -1312,7 +671,7 @@ function loadGod(index) {
     },
   );
 
-  /* AUDIO */
+  /* Audio */
 
   loadMusic(god.music);
 }
@@ -1327,9 +686,7 @@ function hideModelLoader() {
   modelLoader.setAttribute("aria-hidden", "true");
 }
 
-/* ==========================================================
-     UPDATE UI
-  ========================================================== */
+/* Update UI */
 
 function updateStorySpeechButton() {
   const isHindi = currentLanguage === "hi";
@@ -1368,7 +725,7 @@ function speakCurrentStory() {
   const god = gods[currentGodIndex];
   const isHindi = currentLanguage === "hi";
   const languageFile = isHindi ? "hi" : "en";
-  const source = `assets/narrations/${god.narrationFolderName}/${languageFile}.mp3`;
+  const source = `${narrationBaseUrl}/${encodeURIComponent(god.narrationFolderName)}/${languageFile}.mp3`;
   const requestId = ++narrationRequestId;
   const narration = new Audio(source);
 
@@ -1467,9 +824,7 @@ function updateUI(god) {
   });
 }
 
-/* ==========================================================
-     CREATE CARDS
-  ========================================================== */
+/* Create Cards */
 
 function createCards() {
   godSelector.innerHTML = "";
@@ -1548,9 +903,7 @@ function createCards() {
   });
 }
 
-/* ==========================================================
-     UPDATE CARDS
-  ========================================================== */
+/* Update Cards */
 
 function updateCards() {
   const cards = document.querySelectorAll(".god-card");
@@ -1578,9 +931,7 @@ function updateCards() {
   });
 }
 
-/* ==========================================================
-     MUSIC
-  ========================================================== */
+/* Music */
 
 function loadMusic(src) {
   if (audio) {
@@ -1600,9 +951,7 @@ function loadMusic(src) {
   }
 }
 
-/* ==========================================================
-     MUSIC BUTTON
-  ========================================================== */
+/* Music Button */
 
 musicButton.addEventListener("click", function () {
   if (!audio) return;
@@ -1633,9 +982,7 @@ musicButton.addEventListener("click", function () {
   }
 });
 
-/* ==========================================================
-     LANGUAGE BUTTON
-  ========================================================== */
+/* Language Button */
 
 languageButton.addEventListener("click", function () {
   stopStorySpeech();
@@ -1678,139 +1025,13 @@ languageButton.addEventListener("click", function () {
   }, 180);
 });
 
-/* ==========================================================
-     SETTINGS LANGUAGE
-  ========================================================== */
+/* Settings Language */
 
 function updateSettingsLanguage() {
-  if (currentLanguage === "hi") {
-    settingsTitle.textContent = "सेटिंग्स";
-
-    autoRotateName.textContent = "ऑटो रोटेट";
-
-    autoRotateDescription.textContent = "दिव्य मॉडल को स्वचालित रूप से घुमाएं";
-
-    fullscreenName.textContent = "फुलस्क्रीन";
-
-    fullscreenDescription.textContent = "दिव्य अनुभव को फुलस्क्रीन में देखें";
-
-    arPlacementName.textContent = "एआर में रखें";
-
-    arPlacementDescription.textContent = arSession
-      ? "जगह खोजने के लिए डिवाइस घुमाएँ, फिर टैप करें"
-      : "चयनित देवता को अपने स्थान में रखें";
-
-    resetViewName.textContent = "व्यू रीसेट करें";
-
-    resetViewDescription.textContent =
-      "मॉडल और कैमरा को डिफ़ॉल्ट व्यू पर रीसेट करें";
-
-    resetViewButton.setAttribute("aria-label", "व्यू रीसेट करें");
-
-    resetViewButton.setAttribute("title", "व्यू रीसेट करें");
-
-    settingsClose.setAttribute("aria-label", "सेटिंग्स बंद करें");
-    settingsClose.setAttribute("title", "सेटिंग्स बंद करें");
-
-    languageButton.setAttribute("title", "भाषा बदलें");
-    musicButton.setAttribute("aria-label", "भजन चलाएं या रोकें");
-    musicButton.setAttribute("title", "भजन");
-    settingsButton.setAttribute("aria-label", "सेटिंग्स खोलें");
-    settingsButton.setAttribute("title", "सेटिंग्स");
-
-    /* PRAYER SOUNDS */
-
-    templeBellButton.setAttribute("aria-label", "मंदिर की घंटी");
-    templeBellButton.setAttribute("title", "मंदिर की घंटी");
-    templeBellText.textContent = "मंदिर की घंटी";
-    fastBellButton.setAttribute("aria-label", "गरुड़ घंटी");
-    fastBellButton.setAttribute("title", "गरुड़ घंटी");
-    fastBellText.textContent = "तेज़ मंदिर की घंटी";
-    shankhButton.setAttribute("aria-label", "शंख");
-    shankhButton.setAttribute("title", "शंख");
-    shankhText.textContent = "शंख";
-
-    /* VIRTUAL DIYA */
-
-    virtualDiyaText.textContent = "दीपक अर्पित करें";
-
-    virtualDiyaButton.setAttribute("aria-label", "दीपक अर्पित करें");
-
-    virtualDiyaButton.setAttribute("title", "दीपक अर्पित करें");
-
-    flowerOfferingText.textContent = "फूल अर्पित करें";
-
-    flowerOfferingButton.setAttribute("aria-label", "फूल अर्पित करें");
-
-    flowerOfferingButton.setAttribute("title", "फूल अर्पित करें");
-  } else {
-    settingsTitle.textContent = "Settings";
-
-    autoRotateName.textContent = "Auto Rotate";
-
-    autoRotateDescription.textContent = "Rotate the divine model automatically";
-
-    fullscreenName.textContent = "Fullscreen";
-
-    fullscreenDescription.textContent =
-      "View the divine experience in fullscreen";
-
-    arPlacementName.textContent = "AR Placement";
-
-    arPlacementDescription.textContent = arSession
-      ? "Move to scan a surface, then tap to place"
-      : "Place the selected deity in your space";
-
-    resetViewName.textContent = "Reset View";
-
-    resetViewDescription.textContent =
-      "Reset the model and camera to the default view";
-
-    resetViewButton.setAttribute("aria-label", "Reset View");
-
-    resetViewButton.setAttribute("title", "Reset View");
-
-    settingsClose.setAttribute("aria-label", "Close settings");
-    settingsClose.setAttribute("title", "Close settings");
-
-    languageButton.setAttribute("aria-label", "Switch language");
-    languageButton.setAttribute("title", "Switch Language");
-    musicButton.setAttribute("aria-label", "Toggle Chanting");
-    musicButton.setAttribute("title", "Chanting");
-    settingsButton.setAttribute("aria-label", "Open settings");
-    settingsButton.setAttribute("title", "Settings");
-
-    /* PRAYER SOUNDS */
-
-    templeBellButton.setAttribute("aria-label", "Temple Bell");
-    templeBellButton.setAttribute("title", "Temple Bell");
-    templeBellText.textContent = "Temple Bell";
-    fastBellButton.setAttribute("aria-label", "Pooja Bell");
-    fastBellButton.setAttribute("title", "Pooja Bell");
-    fastBellText.textContent = "Pooja Bell";
-    shankhButton.setAttribute("aria-label", "Shankh Sound");
-    shankhButton.setAttribute("title", "Shankh");
-    shankhText.textContent = "Shankh";
-
-    /* VIRTUAL DIYA */
-
-    virtualDiyaText.textContent = "Offer Virtual Diya";
-
-    virtualDiyaButton.setAttribute("aria-label", "Offer Diya");
-
-    virtualDiyaButton.setAttribute("title", "Offer Diya");
-
-    flowerOfferingText.textContent = "Offer Flowers";
-
-    flowerOfferingButton.setAttribute("aria-label", "Offer Flowers");
-
-    flowerOfferingButton.setAttribute("title", "Offer Flowers");
-  }
+  window.DivyatraComponents.settingsUI.updateSettingsLanguage();
 }
 
-/* ==========================================================
-     SETTINGS BUTTON
-  ========================================================== */
+/* Settings Button */
 
 settingsButton.addEventListener("click", function (event) {
   event.stopPropagation();
@@ -1818,25 +1039,19 @@ settingsButton.addEventListener("click", function (event) {
   settingsPopup.classList.toggle("show");
 });
 
-/* ==========================================================
-     CLOSE SETTINGS
-  ========================================================== */
+/* Close Settings */
 
 settingsClose.addEventListener("click", function () {
   settingsPopup.classList.remove("show");
 });
 
-/* ==========================================================
-     AUTO ROTATE TOGGLE
-  ========================================================== */
+/* Auto Rotate Toggle */
 
 autoRotateToggle.addEventListener("change", function () {
   autoRotate = this.checked;
 });
 
-/* ==========================================================
-     FULLSCREEN TOGGLE
-  ========================================================== */
+/* Fullscreen Toggle */
 
 fullscreenToggle.addEventListener("change", function () {
   if (this.checked) {
@@ -2007,9 +1222,7 @@ function finishARSession() {
   applyResponsiveModelPosition();
 }
 
-/* ==========================================================
-     ENTER FULLSCREEN
-  ========================================================== */
+/* Enter Fullscreen */
 
 function enterFullscreen() {
   if (document.documentElement.requestFullscreen) {
@@ -2019,9 +1232,7 @@ function enterFullscreen() {
   }
 }
 
-/* ==========================================================
-     EXIT FULLSCREEN
-  ========================================================== */
+/* Exit Fullscreen */
 
 function exitFullscreen() {
   if (document.fullscreenElement && document.exitFullscreen) {
@@ -2029,17 +1240,13 @@ function exitFullscreen() {
   }
 }
 
-/* ==========================================================
-     FULLSCREEN STATE
-  ========================================================== */
+/* Fullscreen State */
 
 document.addEventListener("fullscreenchange", function () {
   fullscreenToggle.checked = !!document.fullscreenElement;
 });
 
-/* ==========================================================
-     RESET VIEW
-  ========================================================== */
+/* Reset View */
 
 resetViewButton.addEventListener("click", function () {
   resetView();
@@ -2050,15 +1257,15 @@ function resetView() {
     return;
   }
 
-  /* RESET CAMERA */
+  /* Reset Camera */
 
   camera.position.set(0.8, 1.5, 5.5);
 
-  /* RESET ORBIT TARGET */
+  /* Reset Orbit Target */
 
   controls.target.set(0.8, 1.55, 0);
 
-  /* RESET MODEL ROTATION */
+  /* Reset Model Rotation */
 
   if (currentModel) {
     currentModel.rotation.set(0, getModelRotationY(gods[currentGodIndex]), 0);
@@ -2066,14 +1273,12 @@ function resetView() {
 
   clearFlowerOfferings();
 
-  /* UPDATE CONTROLS */
+  /* Update Controls */
 
   controls.update();
 }
 
-/* ==========================================================
-     CLOSE SETTINGS OUTSIDE CLICK
-  ========================================================== */
+/* Close Settings Outside Click */
 
 document.addEventListener("click", function (event) {
   if (
@@ -2084,9 +1289,7 @@ document.addEventListener("click", function (event) {
   }
 });
 
-/* ==========================================================
-     ESCAPE KEY
-  ========================================================== */
+/* Escape Key */
 
 document.addEventListener("keydown", function (event) {
   if (event.key === "Escape") {
@@ -2094,9 +1297,7 @@ document.addEventListener("keydown", function (event) {
   }
 });
 
-/* ==========================================================
-     FLOWER OFFERING
-  ========================================================== */
+/* Flower Offering */
 
 function createFlower() {
   const flower = new THREE.Group();
@@ -2410,17 +1611,13 @@ flowerOfferingButton.addEventListener("click", startFlowerOffering);
 
 storySpeechButton.addEventListener("click", speakCurrentStory);
 
-/* ==========================================================
-     VIRTUAL DIYA
-  ========================================================== */
+/* Virtual Diya */
 
 function createVirtualDiya() {
   const diyaGroup = new THREE.Group();
   diyaGroup.name = "VirtualDiya";
 
-  // =========================================================
   // 1. DIYA BODY — hollow terracotta bowl
-  // =========================================================
 
   const diyaMaterial = new THREE.MeshStandardMaterial({
     color: 0x9a4f2b,
@@ -2475,9 +1672,7 @@ function createVirtualDiya() {
 
   diyaGroup.add(diyaBody);
 
-  // =========================================================
   // 2. DARK INNER CAVITY
-  // =========================================================
 
   const cavityGeometry = new THREE.SphereGeometry(0.365, 40, 24);
 
@@ -2497,9 +1692,7 @@ function createVirtualDiya() {
 
   diyaGroup.add(cavity);
 
-  // =========================================================
   // 3. OIL
-  // =========================================================
 
   const oilGeometry = new THREE.SphereGeometry(0.285, 40, 24);
 
@@ -2519,9 +1712,7 @@ function createVirtualDiya() {
 
   diyaGroup.add(oil);
 
-  // =========================================================
   // 4. WICK
-  // =========================================================
 
   const wickGeometry = new THREE.CylinderGeometry(0.018, 0.03, 0.19, 14);
 
@@ -2542,9 +1733,7 @@ function createVirtualDiya() {
 
   diyaGroup.add(wick);
 
-  // =========================================================
   // 5. BASE
-  // =========================================================
 
   const baseGeometry = new THREE.CylinderGeometry(0.2, 0.27, 0.055, 32);
 
@@ -2559,9 +1748,7 @@ function createVirtualDiya() {
 
   diyaGroup.add(base);
 
-  // =========================================================
   // 6. REALISTIC OUTER FLAME
-  // =========================================================
 
   const outerFlameMaterial = new THREE.MeshBasicMaterial({
     color: 0xff7a18,
@@ -2582,9 +1769,7 @@ function createVirtualDiya() {
 
   diyaGroup.add(diyaFlame);
 
-  // =========================================================
   // 7. YELLOW INNER FLAME
-  // =========================================================
 
   const innerFlameMaterial = new THREE.MeshBasicMaterial({
     color: 0xffff9a,
@@ -2605,9 +1790,7 @@ function createVirtualDiya() {
 
   diyaGroup.add(innerFlame);
 
-  // =========================================================
   // 8. WHITE-HOT FLAME CORE
-  // =========================================================
 
   const coreMaterial = new THREE.MeshBasicMaterial({
     color: 0xffffdf,
@@ -2628,9 +1811,7 @@ function createVirtualDiya() {
 
   diyaGroup.add(flameCore);
 
-  // =========================================================
   // 9. SOFT FLAME GLOW
-  // =========================================================
 
   const glowMaterial = new THREE.MeshBasicMaterial({
     color: 0xff941f,
@@ -2651,9 +1832,7 @@ function createVirtualDiya() {
 
   diyaGroup.add(glow);
 
-  // =========================================================
   // 10. FLAME LIGHT
-  // =========================================================
 
   diyaLight = new THREE.PointLight(0xffa52b, 2.4, 4.5);
 
@@ -2661,9 +1840,7 @@ function createVirtualDiya() {
 
   diyaGroup.add(diyaLight);
 
-  // =========================================================
   // 11. INITIAL STATE
-  // =========================================================
 
   diyaGroup.scale.set(0.01, 0.01, 0.01);
 
@@ -2674,9 +1851,7 @@ function createVirtualDiya() {
   return diyaGroup;
 }
 
-/* ==========================================================
-     PERFORM DIYA AARTI
-  ========================================================== */
+/* Perform Diya Aarti */
 
 function performVirtualDiya() {
   if (!scene || !currentModel) {
@@ -2766,9 +1941,7 @@ function performVirtualDiya() {
       virtualDiya.scale.set(diyaScale, diyaScale, diyaScale);
     }
 
-    // =========================================================
     // REALISTIC FLAME FLICKER
-    // =========================================================
 
     if (diyaFlame) {
       const t = currentTime * 0.012;
@@ -2794,9 +1967,7 @@ function performVirtualDiya() {
       diyaFlame.rotation.z = Math.sin(t * 2.4) * 0.1;
     }
 
-    // =========================================================
     // FLAME LIGHT FLICKER
-    // =========================================================
 
     if (diyaLight) {
       const lightFlicker =
@@ -2821,9 +1992,7 @@ function performVirtualDiya() {
   diyaAnimation = requestAnimationFrame(animateDiya);
 }
 
-/* ==========================================================
-     FADE OUT DIYA
-  ========================================================== */
+/* Fade Out Diya */
 
 function fadeOutDiya() {
   if (!virtualDiya) {
@@ -2863,17 +2032,13 @@ function fadeOutDiya() {
   requestAnimationFrame(fadeAnimation);
 }
 
-/* ==========================================================
-     VIRTUAL DIYA BUTTON
-  ========================================================== */
+/* Virtual Diya Button */
 
 virtualDiyaButton.addEventListener("click", function () {
   performVirtualDiya();
 });
 
-/* ==========================================================
-     RESIZE
-  ========================================================== */
+/* Resize */
 
 window.addEventListener("resize", function () {
   if (!camera || !renderer) {
@@ -2891,9 +2056,7 @@ window.addEventListener("resize", function () {
   applyResponsiveModelPosition();
 });
 
-/* ==========================================================
-     ANIMATION
-  ========================================================== */
+/* Animation */
 
 function animate(timestamp, frame) {
   if (frame && arHitTestSource && arReferenceSpace && !arModelPlaced) {
@@ -2911,19 +2074,19 @@ function animate(timestamp, frame) {
     }
   }
 
-  /* AUTO ROTATE */
+  /* Auto Rotate */
 
   if (currentModel && autoRotate) {
     currentModel.rotation.y += 0.0012;
   }
 
-  /* PARTICLES */
+  /* Particles */
 
   if (particles) {
     particles.rotation.y += 0.00015;
   }
 
-  /* GLOW */
+  /* Glow */
 
   if (divineGlow) {
     const pulse = 1 + Math.sin(Date.now() * 0.001) * 0.025;
@@ -2938,9 +2101,7 @@ function animate(timestamp, frame) {
   renderer.render(scene, camera);
 }
 
-/* ==========================================================
-     START
-  ========================================================== */
+/* Start */
 
 createCards();
 

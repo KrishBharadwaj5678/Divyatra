@@ -1,326 +1,390 @@
 @media (max-width: 900px) {
-        header,
-        .hero {
-          width: calc(100% - 40px);
-        }
+  header,
+  .hero {
+    width: calc(100% - 40px);
+  }
 
-        .hero {
-          padding-top: 105px;
-        }
+  .hero {
+    padding-top: 105px;
+  }
 
-        .cursor-glow {
-          width: 350px;
-          height: 350px;
-        }
+  .cursor-glow {
+    width: 350px;
+    height: 350px;
+  }
 
-        .glow-one {
-          width: 420px;
-          height: 420px;
+  .glow-one {
+    width: 420px;
+    height: 420px;
 
-          left: -190px;
+    left: -190px;
 
-          filter: blur(65px);
-        }
+    filter: blur(65px);
+  }
 
-        .glow-two {
-          width: 500px;
-          height: 500px;
+  .glow-two {
+    width: 500px;
+    height: 500px;
 
-          right: -260px;
+    right: -260px;
 
-          filter: blur(65px);
-        }
+    filter: blur(65px);
+  }
 
-        .glow-three {
-          width: 430px;
-          height: 430px;
+  .glow-three {
+    width: 430px;
+    height: 430px;
 
-          left: 15%;
+    left: 15%;
 
-          filter: blur(60px);
-        }
+    filter: blur(60px);
+  }
 
-        .glow-four {
-          width: 280px;
-          height: 280px;
+  .glow-four {
+    width: 280px;
+    height: 280px;
 
-          right: 5%;
+    right: 5%;
 
-          filter: blur(55px);
-        }
+    filter: blur(55px);
+  }
 
-        .headline {
-          font-size: clamp(56px, 10vw, 95px);
-        }
+  .headline {
+    font-size: clamp(56px, 10vw, 95px);
+  }
 
-        .headline-row {
-          gap: 16px;
-        }
+  .headline-row {
+    gap: 16px;
+  }
 
-        .hero-image {
-          width: clamp(135px, 20vw, 190px);
-          height: clamp(78px, 11vw, 110px);
-        }
+  .hero-image {
+    width: clamp(135px, 20vw, 190px);
+    height: clamp(78px, 11vw, 110px);
+  }
 
-        .actions {
-          margin-top: 36px;
-        }
+  .actions {
+    margin-top: 36px;
+  }
 
-        .devotional-note {
-          margin-top: 14px;
-          font-size: 17px;
-        }
+  .devotional-note {
+    margin-top: 14px;
+    font-size: 17px;
+  }
 
-        .socials {
-          gap: 8px;
-        }
+  .socials {
+    gap: 8px;
+  }
 
-        .social-link {
-          width: 38px;
-          height: 38px;
-        }
+  .social-link {
+    width: 38px;
+    height: 38px;
+  }
 
-        .social-link svg {
-          width: 18px;
-          height: 18px;
-        }
-      }
+  .social-link svg {
+    width: 18px;
+    height: 18px;
+  }
+}
 
 @media (min-width: 601px) and (max-width: 900px) {
-        .hero {
-          justify-content: center;
-          padding-top: clamp(48px, 7vh, 80px);
-          padding-bottom: 32px;
-        }
+  .hero {
+    justify-content: center;
+    min-height: auto;
+    padding-top: clamp(48px, 7vh, 80px);
+    padding-bottom: 32px;
+  }
 
-        .devotional-closer {
-          margin: clamp(48px, 8vh, 88px) 0 0;
-        }
-      }
+  .devotional-closer {
+    margin: clamp(32px, 5vh, 50px) 0 0;
+  }
+
+  .deity-discovery {
+    padding: 64px 28px 80px;
+  }
+}
 
 @media (max-width: 600px) {
-        header {
-          width: calc(100% - 28px);
+  header {
+    width: calc(100% - 28px);
 
-          height: 72px;
-        }
+    height: 72px;
+  }
 
-        .logo img {
-          width: 29px;
-          height: 29px;
-        }
+  .logo img {
+    width: 29px;
+    height: 29px;
+  }
 
-        .socials {
-          gap: 6px;
-        }
+  .socials {
+    gap: 6px;
+  }
 
-        .social-link {
-          width: 36px;
-          height: 36px;
-        }
+  .social-link {
+    width: 36px;
+    height: 36px;
+  }
 
-        .social-link svg {
-          width: 16px;
-          height: 16px;
-        }
+  .social-link svg {
+    width: 16px;
+    height: 16px;
+  }
 
-        .hero {
-          width: calc(100% - 28px);
+  .hero {
+    width: calc(100% - 28px);
 
-          min-height: calc(100vh - 72px);
+    min-height: auto;
 
-          padding-top: 92px;
+    padding-top: clamp(58px, 8vh, 76px);
 
-          padding-bottom: 42px;
-        }
+    padding-bottom: 42px;
+  }
 
-        /* Mobile ambient glows */
+  .devotional-closer {
+    margin: 32px 0 0;
+  }
 
-        .glow-one {
-          width: 330px;
-          height: 330px;
+  .deity-discovery {
+    padding: 58px 14px 72px;
+  }
 
-          left: -190px;
-          top: 8vh;
+  .discovery-head {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 22px;
+  }
 
-          filter: blur(50px);
-        }
+  .discovery-head h2 {
+    font-size: clamp(38px, 10vw, 52px);
+  }
 
-        .glow-two {
-          width: 390px;
-          height: 390px;
+  .discovery-intro {
+    max-width: 340px;
+    font-size: 13px;
+  }
 
-          right: -240px;
-          top: 30vh;
+  .deity-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 10px;
+  }
 
-          filter: blur(55px);
-        }
+  .deity-card {
+    aspect-ratio: 0.78;
+  }
 
-        .glow-three {
-          width: 330px;
-          height: 330px;
+  .deity-card-number {
+    top: 11px;
+    left: 12px;
+    font-size: 9px;
+  }
 
-          left: 5%;
-          bottom: -190px;
+  .deity-card-meta {
+    right: 32px;
+    bottom: 13px;
+    left: 12px;
+  }
 
-          filter: blur(50px);
-        }
+  .deity-card-meta span {
+    font-size: 8px;
+  }
 
-        .glow-four {
-          width: 210px;
-          height: 210px;
+  .deity-card-meta h3 {
+    font-size: 27px;
+  }
 
-          right: -20px;
-          top: 4vh;
+  .deity-card-arrow {
+    right: 11px;
+    bottom: 14px;
+    font-size: 16px;
+  }
 
-          filter: blur(45px);
-        }
+  /* Mobile ambient glows */
 
-        .headline {
-          font-size: clamp(48px, 15.8vw, 76px);
+  .glow-one {
+    width: 330px;
+    height: 330px;
 
-          line-height: 0.92;
+    left: -190px;
+    top: 8vh;
 
-          letter-spacing: -0.065em;
-        }
+    filter: blur(50px);
+  }
 
-        .headline-row {
-          gap: 8px;
-        }
+  .glow-two {
+    width: 390px;
+    height: 390px;
 
-        .headline-row:first-child {
-          flex-direction: column;
-          gap: 12px;
-        }
+    right: -240px;
+    top: 30vh;
 
-        .headline-row.second {
-          margin-top: 7px;
+    filter: blur(55px);
+  }
 
-          gap: 10px;
-        }
+  .glow-three {
+    width: 330px;
+    height: 330px;
 
-        .hero-image {
-          width: clamp(128px, 40vw, 170px);
-          height: clamp(76px, 23vw, 104px);
-        }
+    left: 5%;
+    bottom: -190px;
 
-        .actions {
-          margin-top: 32px;
-        }
+    filter: blur(50px);
+  }
 
-        .animated-button {
-          width: 145px;
-          height: 48px;
+  .glow-four {
+    width: 210px;
+    height: 210px;
 
-          padding: 0 31px;
+    right: -20px;
+    top: 4vh;
 
-          font-size: 11px;
+    filter: blur(45px);
+  }
 
-          letter-spacing: 0.11em;
-        }
+  .headline {
+    font-size: clamp(48px, 15.8vw, 76px);
 
-        .animated-button svg {
-          width: 20px;
-          height: 20px;
-        }
+    line-height: 0.92;
 
-        .animated-button .arr-1 {
-          right: 13px;
-        }
+    letter-spacing: -0.065em;
+  }
 
-        .animated-button:hover .arr-2 {
-          left: 13px;
-        }
+  .headline-row {
+    gap: 8px;
+  }
 
-        .corner-one {
-          top: 91px;
-          left: 9px;
-        }
+  .headline-row:first-child {
+    flex-direction: column;
+    gap: 12px;
+  }
 
-        .corner-two {
-          top: 91px;
-          right: 9px;
-        }
-      }
+  .headline-row.second {
+    margin-top: 7px;
+
+    gap: 10px;
+  }
+
+  .hero-image {
+    width: clamp(128px, 40vw, 170px);
+    height: clamp(76px, 23vw, 104px);
+  }
+
+  .actions {
+    margin-top: 32px;
+  }
+
+  .animated-button {
+    width: 145px;
+    height: 48px;
+
+    padding: 0 31px;
+
+    font-size: 11px;
+
+    letter-spacing: 0.11em;
+  }
+
+  .animated-button svg {
+    width: 20px;
+    height: 20px;
+  }
+
+  .animated-button .arr-1 {
+    right: 13px;
+  }
+
+  .animated-button:hover .arr-2 {
+    left: 13px;
+  }
+
+  .corner-one {
+    top: 91px;
+    left: 9px;
+  }
+
+  .corner-two {
+    top: 91px;
+    right: 9px;
+  }
+}
 
 @media (max-width: 390px) {
-        .hero {
-          padding-top: 82px;
-        }
+  .hero {
+    padding-top: 82px;
+  }
 
-        .glow-one {
-          width: 280px;
-          height: 280px;
+  .glow-one {
+    width: 280px;
+    height: 280px;
 
-          left: -165px;
-        }
+    left: -165px;
+  }
 
-        .glow-two {
-          width: 320px;
-          height: 320px;
+  .glow-two {
+    width: 320px;
+    height: 320px;
 
-          right: -200px;
-        }
+    right: -200px;
+  }
 
-        .glow-three {
-          width: 280px;
-          height: 280px;
+  .glow-three {
+    width: 280px;
+    height: 280px;
 
-          left: 0;
-        }
+    left: 0;
+  }
 
-        .glow-four {
-          width: 180px;
-          height: 180px;
+  .glow-four {
+    width: 180px;
+    height: 180px;
 
-          right: -20px;
-        }
+    right: -20px;
+  }
 
-        .headline {
-          font-size: clamp(36px, 13.5vw, 46px);
-        }
+  .headline {
+    font-size: clamp(36px, 13.5vw, 46px);
+  }
 
-        .hero-image {
-          width: clamp(128px, 40vw, 150px);
-          height: clamp(76px, 23vw, 94px);
-        }
+  .hero-image {
+    width: clamp(128px, 40vw, 150px);
+    height: clamp(76px, 23vw, 94px);
+  }
 
-        .headline-row {
-          gap: 7px;
-        }
+  .headline-row {
+    gap: 7px;
+  }
 
-        .actions {
-          margin-top: 28px;
-        }
+  .actions {
+    margin-top: 28px;
+  }
 
-        .animated-button {
-          width: 138px;
-          height: 46px;
+  .animated-button {
+    width: 138px;
+    height: 46px;
 
-          font-size: 10px;
-        }
-      }
+    font-size: 10px;
+  }
+}
 
 @media (hover: none), (pointer: coarse) {
-        .cursor-glow {
-          display: none;
-        }
-      }
+  .cursor-glow {
+    display: none;
+  }
+}
 
 @media (prefers-reduced-motion: reduce) {
-        *,
-        *::before,
-        *::after {
-          animation-duration: 0.01ms !important;
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
 
-          animation-iteration-count: 1 !important;
+    animation-iteration-count: 1 !important;
 
-          transition-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
 
-          scroll-behavior: auto !important;
-        }
+    scroll-behavior: auto !important;
+  }
 
-        .cursor-glow {
-          display: none;
-        }
-      }
+  .cursor-glow {
+    display: none;
+  }
+}
