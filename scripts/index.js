@@ -241,7 +241,9 @@ if (typeof gsap !== "undefined") {
   });
 }
 
-const revealTargets = document.querySelectorAll(".discovery-head, .deity-card");
+const revealTargets = document.querySelectorAll(
+  ".discovery-kicker, .discovery-head h2, .discovery-intro, .deity-card",
+);
 
 if (!prefersReducedMotion && "IntersectionObserver" in window) {
   const revealObserver = new IntersectionObserver(
@@ -256,12 +258,19 @@ if (!prefersReducedMotion && "IntersectionObserver" in window) {
     { threshold: 0.16, rootMargin: "0px 0px -24px 0px" },
   );
 
-  revealTargets.forEach((target, index) => {
+  let cardRevealIndex = 0;
+
+  revealTargets.forEach((target) => {
     target.classList.add("deity-reveal");
-    target.style.setProperty(
-      "--reveal-delay",
-      `${target.matches(".deity-card") ? (index - 1) * 100 : 0}ms`,
-    );
+    const delay = target.matches(".discovery-head h2")
+      ? 100
+      : target.matches(".discovery-intro")
+        ? 200
+        : target.matches(".deity-card")
+          ? cardRevealIndex++ * 100
+          : 0;
+
+    target.style.setProperty("--reveal-delay", `${delay}ms`);
     revealObserver.observe(target);
   });
 }

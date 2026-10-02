@@ -1470,7 +1470,7 @@ function startFlowerOffering() {
 
   const isMobileOrTablet =
     window.matchMedia("(pointer: coarse)").matches || window.innerWidth <= 900;
-  const flowerCount = isMobileOrTablet ? 20 : 50;
+  const flowerCount = isMobileOrTablet ? 15 : 50;
 
   const startTime = performance.now();
 
