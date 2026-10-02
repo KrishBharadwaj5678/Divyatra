@@ -95,6 +95,8 @@ if (heroImage && hasFinePointer && !prefersReducedMotion) {
          GSAP TEXT REVEAL
       ======================================== */
 
+let introTimeline;
+
 if (typeof gsap !== "undefined") {
   gsap.set(".headline-word", {
     y: 90,
@@ -122,19 +124,19 @@ if (typeof gsap !== "undefined") {
     scale: 0.5,
   });
 
-  const intro = gsap.timeline({
+  introTimeline = gsap.timeline({
     delay: 0.25,
   });
 
   if (prefersReducedMotion) {
-    intro.to(".headline-word", {
+    introTimeline.to(".headline-word", {
       y: 0,
       opacity: 1,
       rotateX: 0,
       duration: 0.01,
     });
 
-    intro.to(
+    introTimeline.to(
       ".hero-image",
       {
         scale: 1,
@@ -144,7 +146,7 @@ if (typeof gsap !== "undefined") {
       "<",
     );
 
-    intro.to(
+    introTimeline.to(
       ".actions",
       {
         y: 0,
@@ -154,7 +156,7 @@ if (typeof gsap !== "undefined") {
       "<",
     );
 
-    intro.to(
+    introTimeline.to(
       ".devotional-closer",
       {
         y: 0,
@@ -164,7 +166,7 @@ if (typeof gsap !== "undefined") {
       "<",
     );
 
-    intro.to(
+    introTimeline.to(
       ".temple-divider span",
       {
         scale: 1,
@@ -173,7 +175,7 @@ if (typeof gsap !== "undefined") {
       "<",
     );
   } else {
-    intro.to(".headline-word", {
+    introTimeline.to(".headline-word", {
       y: 0,
       opacity: 1,
       rotateX: 0,
@@ -185,7 +187,7 @@ if (typeof gsap !== "undefined") {
       stagger: 0.12,
     });
 
-    intro.to(
+    introTimeline.to(
       ".hero-image",
       {
         scale: 1,
@@ -198,7 +200,7 @@ if (typeof gsap !== "undefined") {
       "-=0.72",
     );
 
-    intro.to(
+    introTimeline.to(
       ".actions",
       {
         y: 0,
@@ -211,7 +213,7 @@ if (typeof gsap !== "undefined") {
       "-=0.65",
     );
 
-    intro.to(
+    introTimeline.to(
       ".devotional-closer",
       {
         y: 0,
@@ -222,7 +224,7 @@ if (typeof gsap !== "undefined") {
       "-=0.45",
     );
 
-    intro.to(
+    introTimeline.to(
       ".temple-divider span",
       {
         scale: 1,
@@ -236,7 +238,7 @@ if (typeof gsap !== "undefined") {
 
   document.addEventListener("visibilitychange", () => {
     if (!document.hidden) {
-      intro.progress(1);
+      introTimeline.progress(1);
     }
   });
 }
@@ -244,6 +246,8 @@ if (typeof gsap !== "undefined") {
 const revealTargets = document.querySelectorAll(
   ".discovery-kicker, .discovery-head h2, .discovery-intro, .deity-card",
 );
+
+let startDiscoveryReveals = () => {};
 
 if (!prefersReducedMotion && "IntersectionObserver" in window) {
   const revealObserver = new IntersectionObserver(
@@ -255,13 +259,12 @@ if (!prefersReducedMotion && "IntersectionObserver" in window) {
         observer.unobserve(observation.target);
       });
     },
-    { threshold: 0.16, rootMargin: "0px 0px -24px 0px" },
+    { threshold: 0.01, rootMargin: "0px 0px -24px 0px" },
   );
 
   let cardRevealIndex = 0;
 
   revealTargets.forEach((target) => {
-    target.classList.add("deity-reveal");
     const delay = target.matches(".discovery-head h2")
       ? 100
       : target.matches(".discovery-intro")
@@ -271,8 +274,19 @@ if (!prefersReducedMotion && "IntersectionObserver" in window) {
           : 0;
 
     target.style.setProperty("--reveal-delay", `${delay}ms`);
-    revealObserver.observe(target);
   });
+
+  startDiscoveryReveals = () => {
+    revealTargets.forEach((target) => revealObserver.observe(target));
+  };
+} else if (!prefersReducedMotion) {
+  revealTargets.forEach((target) => target.classList.add("is-visible"));
+}
+
+if (introTimeline && !prefersReducedMotion) {
+  introTimeline.eventCallback("onComplete", startDiscoveryReveals);
+} else {
+  startDiscoveryReveals();
 }
 
 const scrollCue = document.querySelector(".scroll-cue");

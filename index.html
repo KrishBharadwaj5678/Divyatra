@@ -44,6 +44,10 @@
       src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
     ></script>
 
+    <script>
+      document.documentElement.classList.add("js");
+    </script>
+
     <link rel="stylesheet" href="./styles/index.css" />
     <link rel="stylesheet" href="./styles/mediaquery/index-breakpoints.css" />
   </head>
@@ -212,17 +216,21 @@
       <section class="deity-discovery" aria-labelledby="deityDiscoveryTitle">
         <div class="discovery-head">
           <div>
-            <p class="discovery-kicker">YOUR JOURNEY STARTS HERE</p>
-            <h2 id="deityDiscoveryTitle">A world of divine forms.</h2>
+            <p class="discovery-kicker deity-reveal">
+              YOUR JOURNEY STARTS HERE
+            </p>
+            <h2 id="deityDiscoveryTitle" class="deity-reveal">
+              A world of divine forms.
+            </h2>
           </div>
-          <p class="discovery-intro">
+          <p class="discovery-intro deity-reveal">
             Explore immersive darshan, sacred stories, and devotional
             experiences, all in one place.
           </p>
         </div>
 
         <div class="deity-grid">
-          <a class="deity-card" href="./darshan.html?god=ganesha">
+          <a class="deity-card deity-reveal" href="./darshan.html?god=ganesha">
             <img src="./assets/images/ganesha.webp" alt="" loading="lazy" />
             <div class="deity-card-meta">
               <span>WISDOM &amp; NEW BEGINNINGS</span>
@@ -231,7 +239,10 @@
             <span class="deity-card-arrow" aria-hidden="true">↗</span>
           </a>
 
-          <a class="deity-card" href="./darshan.html?god=radhakrishna">
+          <a
+            class="deity-card deity-reveal"
+            href="./darshan.html?god=radhakrishna"
+          >
             <img
               src="./assets/images/radhakrishna.webp"
               alt=""
@@ -244,7 +255,7 @@
             <span class="deity-card-arrow" aria-hidden="true">↗</span>
           </a>
 
-          <a class="deity-card" href="./darshan.html?god=sitaram">
+          <a class="deity-card deity-reveal" href="./darshan.html?god=sitaram">
             <img src="./assets/images/sitaram.webp" alt="" loading="lazy" />
             <div class="deity-card-meta">
               <span>DHARMA &amp; COMPASSION</span>
@@ -253,7 +264,7 @@
             <span class="deity-card-arrow" aria-hidden="true">↗</span>
           </a>
 
-          <a class="deity-card" href="./darshan.html?god=shiva">
+          <a class="deity-card deity-reveal" href="./darshan.html?god=shiva">
             <img src="./assets/images/shiva.webp" alt="" loading="lazy" />
             <div class="deity-card-meta">
               <span>STILLNESS &amp; TRANSFORMATION</span>
