@@ -21,6 +21,10 @@
 
 ![DivyatraDemo1](https://github.com/KrishBharadwaj5678/Divyatra/raw/main/readme/demos/DivyatraDemo1.png)
 
+<p align="center">
+  <img src="https://github.com/KrishBharadwaj5678/Divyatra/raw/main/readme/demos/DivyatraDemo2.jpg" width="100%" />
+</p>
+
 <img src="https://github.com/KrishBharadwaj5678/Divyatra/raw/main/readme/gifs/divider.gif" width="100%"/>
 
 ## <img src="https://github.com/KrishBharadwaj5678/Divyatra/raw/main/readme/gifs/features.gif" width="35"/> Features
