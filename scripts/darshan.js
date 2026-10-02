@@ -1620,7 +1620,9 @@ function createVirtualDiya() {
   // 1. DIYA BODY — hollow terracotta bowl
 
   const diyaMaterial = new THREE.MeshStandardMaterial({
-    color: 0x9a4f2b,
+    color: 0x4d2115,
+    emissive: 0x160602,
+    emissiveIntensity: 0.12,
     roughness: 0.82,
     metalness: 0.0,
   });

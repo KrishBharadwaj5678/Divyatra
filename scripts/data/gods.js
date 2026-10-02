@@ -75,7 +75,7 @@ const gods = [
 
     modelRotationY: -0.13,
 
-    mobileModelRotationY: 0,
+    mobileModelRotationY: 0.04,
 
     image: "assets/images/brahma.webp",
 
@@ -452,7 +452,7 @@ const gods = [
 
     modelRotationY: -0.2,
 
-    mobileModelRotationY: 0,
+    mobileModelRotationY: -0.12,
 
     image: "assets/images/radhakrishna.webp",
 
