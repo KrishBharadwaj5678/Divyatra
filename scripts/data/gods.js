@@ -15,7 +15,7 @@ const gods = [
     narrationFolderName: "Ganesha",
 
     model:
-      "https://duijvlhczqtcbtnwvrvm.supabase.co/storage/v1/object/public/Divyatra/models/ganesha.glb",
+      "https://kmfyoxuzrubankcvuemy.supabase.co/storage/v1/object/public/Divyatra/models/ganesha.glb",
 
     modelPosition: { x: 2.1, y: 1.9, z: 0 },
 
@@ -68,7 +68,7 @@ const gods = [
     narrationFolderName: "Brahma",
 
     model:
-      "https://duijvlhczqtcbtnwvrvm.supabase.co/storage/v1/object/public/Divyatra/models/brahma.glb",
+      "https://kmfyoxuzrubankcvuemy.supabase.co/storage/v1/object/public/Divyatra/models/brahma.glb",
 
     modelPosition: { x: 2.2, y: 0.16, z: 0 },
 
@@ -120,7 +120,7 @@ const gods = [
     narrationFolderName: "Saraswati",
 
     model:
-      "https://duijvlhczqtcbtnwvrvm.supabase.co/storage/v1/object/public/Divyatra/models/saraswati.glb",
+      "https://kmfyoxuzrubankcvuemy.supabase.co/storage/v1/object/public/Divyatra/models/saraswati.glb",
 
     modelPosition: { x: 2.03, y: 2.01, z: 0 },
 
@@ -173,7 +173,7 @@ const gods = [
     narrationFolderName: "Lakshmi",
 
     model:
-      "https://duijvlhczqtcbtnwvrvm.supabase.co/storage/v1/object/public/Divyatra/models/lakshmi.glb",
+      "https://kmfyoxuzrubankcvuemy.supabase.co/storage/v1/object/public/Divyatra/models/lakshmi.glb",
 
     modelPosition: { x: 2.05, y: 2.06, z: 0 },
 
@@ -226,7 +226,7 @@ const gods = [
     narrationFolderName: "Kali",
 
     model:
-      "https://duijvlhczqtcbtnwvrvm.supabase.co/storage/v1/object/public/Divyatra/models/kali.glb",
+      "https://kmfyoxuzrubankcvuemy.supabase.co/storage/v1/object/public/Divyatra/models/kali.glb",
 
     modelPosition: { x: 2.05, y: 2.01, z: 0 },
 
@@ -279,7 +279,7 @@ const gods = [
     narrationFolderName: "ShaniDev",
 
     model:
-      "https://duijvlhczqtcbtnwvrvm.supabase.co/storage/v1/object/public/Divyatra/models/shanidev.glb",
+      "https://kmfyoxuzrubankcvuemy.supabase.co/storage/v1/object/public/Divyatra/models/shanidev.glb",
 
     modelPosition: { x: 2.05, y: 1.92, z: 0 },
 
@@ -332,7 +332,7 @@ const gods = [
     narrationFolderName: "Vishnu",
 
     model:
-      "https://duijvlhczqtcbtnwvrvm.supabase.co/storage/v1/object/public/Divyatra/models/vishnu.glb",
+      "https://kmfyoxuzrubankcvuemy.supabase.co/storage/v1/object/public/Divyatra/models/vishnu.glb",
 
     modelPosition: { x: 2.05, y: 0.3, z: 0 },
 
@@ -385,7 +385,7 @@ const gods = [
     narrationFolderName: "Shiva",
 
     model:
-      "https://duijvlhczqtcbtnwvrvm.supabase.co/storage/v1/object/public/Divyatra/models/shiva.glb",
+      "https://kmfyoxuzrubankcvuemy.supabase.co/storage/v1/object/public/Divyatra/models/shiva.glb",
 
     modelPosition: { x: 2.05, y: 1.9, z: 0 },
 
@@ -438,7 +438,7 @@ const gods = [
     narrationFolderName: "RadhaKrishna",
 
     model:
-      "https://duijvlhczqtcbtnwvrvm.supabase.co/storage/v1/object/public/Divyatra/models/radhakrishna.glb",
+      "https://kmfyoxuzrubankcvuemy.supabase.co/storage/v1/object/public/Divyatra/models/radhakrishna.glb",
 
     modelPosition: { x: 2.05, y: 2, z: 0 },
 
@@ -491,7 +491,7 @@ const gods = [
     narrationFolderName: "Hanuman",
 
     model:
-      "https://duijvlhczqtcbtnwvrvm.supabase.co/storage/v1/object/public/Divyatra/models/hanuman.glb",
+      "https://kmfyoxuzrubankcvuemy.supabase.co/storage/v1/object/public/Divyatra/models/hanuman.glb",
 
     modelPosition: { x: 2.05, y: 1.9, z: 0 },
 
@@ -544,7 +544,7 @@ const gods = [
     narrationFolderName: "SitaRam",
 
     model:
-      "https://duijvlhczqtcbtnwvrvm.supabase.co/storage/v1/object/public/Divyatra/models/sitaram.glb",
+      "https://kmfyoxuzrubankcvuemy.supabase.co/storage/v1/object/public/Divyatra/models/sitaram.glb",
 
     modelPosition: { x: 2.05, y: 1.92, z: 0 },
 
@@ -597,7 +597,7 @@ const gods = [
     narrationFolderName: "Durga",
 
     model:
-      "https://duijvlhczqtcbtnwvrvm.supabase.co/storage/v1/object/public/Divyatra/models/durga.glb",
+      "https://kmfyoxuzrubankcvuemy.supabase.co/storage/v1/object/public/Divyatra/models/durga.glb",
 
     modelPosition: { x: 2.05, y: 2.08, z: 0 },
 
