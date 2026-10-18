@@ -25,8 +25,7 @@ const gods = [
 
     image: "assets/images/ganesha.webp",
 
-    music:
-      "https://duijvlhczqtcbtnwvrvm.supabase.co/storage/v1/object/public/Divyatra/chanting/ganesha.mp3",
+    music: "./assets/chanting/ganesha.mp3",
 
     details: {
       "Known As": "Ganapati · Vinayaka · Vighnaharta",
@@ -79,8 +78,7 @@ const gods = [
 
     image: "assets/images/brahma.webp",
 
-    music:
-      "https://duijvlhczqtcbtnwvrvm.supabase.co/storage/v1/object/public/Divyatra/chanting/brahma.mp3",
+    music: "./assets/chanting/brahma.mp3",
 
     details: {
       "Known As": "Svayambhuva · Prajapati · Vedic Creator",
@@ -132,8 +130,7 @@ const gods = [
 
     image: "assets/images/saraswati.webp",
 
-    music:
-      "https://duijvlhczqtcbtnwvrvm.supabase.co/storage/v1/object/public/Divyatra/chanting/saraswati.mp3",
+    music: "./assets/chanting/saraswati.mp3",
 
     details: {
       "Known As": "Vagdevi · Bharati · Sharada",
@@ -186,8 +183,7 @@ const gods = [
 
     image: "assets/images/lakshmi.webp",
 
-    music:
-      "https://duijvlhczqtcbtnwvrvm.supabase.co/storage/v1/object/public/Divyatra/chanting/lakshmi.mp3",
+    music: "./assets/chanting/lakshmi.mp3",
 
     details: {
       "Known As": "Shri · Padma · Kamala",
@@ -240,8 +236,7 @@ const gods = [
 
     image: "assets/images/kali.webp",
 
-    music:
-      "https://duijvlhczqtcbtnwvrvm.supabase.co/storage/v1/object/public/Divyatra/chanting/kali.mp3",
+    music: "./assets/chanting/kali.mp3",
 
     details: {
       "Known As": "Kali Mata · Shyama · Bhadrakali",
@@ -294,8 +289,7 @@ const gods = [
 
     image: "assets/images/shanidev.webp",
 
-    music:
-      "https://duijvlhczqtcbtnwvrvm.supabase.co/storage/v1/object/public/Divyatra/chanting/shanidev.mp3",
+    music: "./assets/chanting/shanidev.mp3",
 
     details: {
       "Known As": "Shanaishchara · Saturn",
@@ -348,8 +342,7 @@ const gods = [
 
     image: "assets/images/vishnu.webp",
 
-    music:
-      "https://duijvlhczqtcbtnwvrvm.supabase.co/storage/v1/object/public/Divyatra/chanting/vishnu.mp3",
+    music: "./assets/chanting/vishnu.mp3",
 
     details: {
       "Known As": "Narayana · Hari · Jagannatha",
@@ -402,8 +395,7 @@ const gods = [
 
     image: "assets/images/shiva.webp",
 
-    music:
-      "https://duijvlhczqtcbtnwvrvm.supabase.co/storage/v1/object/public/Divyatra/chanting/shiva.mp3",
+    music: "./assets/chanting/shiva.mp3",
 
     details: {
       "Known As": "Mahadeva · Shankara · Neelkanth",
@@ -456,8 +448,7 @@ const gods = [
 
     image: "assets/images/radhakrishna.webp",
 
-    music:
-      "https://duijvlhczqtcbtnwvrvm.supabase.co/storage/v1/object/public/Divyatra/chanting/radhakrishna.mp3",
+    music: "./assets/chanting/radhakrishna.mp3",
 
     details: {
       "Known As": "Radha Madhava · Radha Govinda",
@@ -510,8 +501,7 @@ const gods = [
 
     image: "assets/images/hanuman.webp",
 
-    music:
-      "https://duijvlhczqtcbtnwvrvm.supabase.co/storage/v1/object/public/Divyatra/chanting/hanuman.mp3",
+    music: "./assets/chanting/hanuman.mp3",
 
     details: {
       "Known As": "Anjaneya · Bajrangbali · Maruti",
@@ -564,8 +554,7 @@ const gods = [
 
     image: "assets/images/sitaram.webp",
 
-    music:
-      "https://duijvlhczqtcbtnwvrvm.supabase.co/storage/v1/object/public/Divyatra/chanting/sitaram.mp3",
+    music: "./assets/chanting/sitaram.mp3",
 
     details: {
       "Known As": "Rama Rajya · Sita Ram · Maryada Purushottam",
@@ -618,8 +607,7 @@ const gods = [
 
     image: "assets/images/durga.webp",
 
-    music:
-      "https://duijvlhczqtcbtnwvrvm.supabase.co/storage/v1/object/public/Divyatra/chanting/durga.mp3",
+    music: "./assets/chanting/durga.mp3",
 
     details: {
       "Known As": "Shailaputri · Devi · Mata Rani",

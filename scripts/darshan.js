@@ -34,8 +34,7 @@ const requestedGodIndex = requestedGod
 
 let currentGodIndex = requestedGodIndex >= 0 ? requestedGodIndex : 8;
 
-const narrationBaseUrl =
-  "https://duijvlhczqtcbtnwvrvm.supabase.co/storage/v1/object/public/Divyatra/narrations";
+const narrationBaseUrl = "./assets/narrations";
 
 function getModelRotationY(god) {
   if (window.innerWidth <= 600) {
